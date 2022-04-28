@@ -6,4 +6,9 @@
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+.container {
+  padding-block: min(1vw, 1rem);
+  background: #eee;
+}
+</style>

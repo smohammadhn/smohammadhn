@@ -356,7 +356,7 @@ import ResumeInformationCard from '~/components/cards/ResumeInformationCard'
 
 <script>
 export default {
-  layout: 'empty',
+  layout: 'resume',
 }
 </script>
 

@@ -7,4 +7,7 @@ export default defineNuxtConfig({
     '~/assets/styles/global.scss',
     '~/assets/styles/variables.scss',
   ],
+  publicRuntimeConfig: {
+    API_KEY: process.env.API_KEY,
+  },
 })
