@@ -1,0 +1,11 @@
+.button {
+  border: 1px solid var(--clr-primary-300);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: 100ms;
+
+  &:hover {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-primary-700);
+  }
+}
