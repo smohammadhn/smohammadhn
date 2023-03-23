@@ -1,6 +1,16 @@
 .application {
   padding-left: 14.5rem;
   display: flex;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-image: url('/tile.png');
+    inset: 0;
+    opacity: 0.2;
+  }
 
   .pages-container {
     width: 100%;

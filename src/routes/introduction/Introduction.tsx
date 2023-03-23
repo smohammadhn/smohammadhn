@@ -18,7 +18,7 @@ export default function Introduction() {
           SSR, SEO techniques, UI/UX, and performance optimizations.
         </p>
 
-        <Button to="/WhoAmI">What can I do?</Button>
+        <Button to="/expertise">What can I do?</Button>
       </div>
     </LayoutDefault>
   )

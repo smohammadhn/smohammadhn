@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import '~/assets/styles/global.scss'
 
 import Introduction from '~/routes/introduction/Introduction'
-import WhoAmI from '~/routes/whoAmI/WhoAmI'
+import Expertise from '~/routes/expertise/Expertise'
 import Projects from '~/routes/projects/Projects'
 import WorkExperience from '~/routes/work-experience/WorkExperience'
 
@@ -16,8 +16,8 @@ const router = createBrowserRouter([
     element: <Introduction />,
   },
   {
-    path: 'whoAmI',
-    element: <WhoAmI />,
+    path: 'expertise',
+    element: <Expertise />,
   },
   {
     path: 'projects',

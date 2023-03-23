@@ -1,10 +1,10 @@
 import LayoutDefault from '~/components/LayoutDefault/LayoutDefault'
-import './WhoAmI.scss'
+import './Expertise.scss'
 
-export default function WhoAmI() {
+export default function Expertise() {
   return (
     <LayoutDefault>
-      <div>WhoAmI</div>
+      <div>Expertise</div>
     </LayoutDefault>
   )
 }

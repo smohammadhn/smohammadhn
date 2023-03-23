@@ -8,8 +8,8 @@ export default function Test() {
       to: '/',
     },
     {
-      title: 'what can I do?',
-      to: '/whoAmI',
+      title: 'What can I do?',
+      to: '/expertise',
     },
     {
       title: 'Projects',
@@ -17,28 +17,29 @@ export default function Test() {
     },
     {
       title: 'Work Experience',
-      html: (
-        <>
-          Work <br /> Experience
-        </>
-      ),
+      to: '/work-experience',
+    },
+    {
+      title: 'Contact me',
       to: '/work-experience',
     },
   ]
 
   return (
     <ul className="NavigationMenu">
+      <li className="filler"></li>
       {navItems.map((e) => (
-        <li>
-          <NavLink
-            className={({ isActive, isPending }) =>
-              isActive ? 'active' : isPending ? 'pending' : ''
-            }
-            to={e.to}
-          >
-            {e.title || e.html}
-          </NavLink>
-        </li>
+        <>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? 'active' : undefined)}
+              to={e.to}
+            >
+              {e.title}
+            </NavLink>
+          </li>
+          <li className="filler"></li>
+        </>
       ))}
     </ul>
   )
