@@ -38,6 +38,7 @@ a:not([class]) {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 /* Make images easier to work with */

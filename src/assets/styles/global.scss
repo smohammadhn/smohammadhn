@@ -1,7 +1,14 @@
 @import '~/assets/styles/reset.css';
 @import '~/assets/styles/font-lato.css';
+@import '~/assets/styles/variables.css';
 
 html,
 body {
   font-family: 'lato', Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+body {
+  background-color: var(--clr-primary-700);
+  color: var(--clr-primary-300);
 }

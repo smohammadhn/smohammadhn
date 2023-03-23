@@ -1,0 +1,17 @@
+.application {
+  padding-left: 14.5rem;
+  display: flex;
+
+  .pages-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5rem;
+    padding-left: 0;
+    display: grid;
+    place-items: center;
+
+    & > div {
+      width: 100%;
+    }
+  }
+}

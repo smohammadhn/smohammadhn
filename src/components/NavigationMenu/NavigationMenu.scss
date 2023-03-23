@@ -1,0 +1,48 @@
+.NavigationMenu {
+  width: 13rem;
+  background-color: var(--clr-primary-900);
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  font-size: 1.25rem;
+  color: var(--clr-primary-400);
+
+  display: flex;
+  row-gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    width: 100%;
+
+    a {
+      transition: 300ms;
+      opacity: 0.5;
+      border-top-left-radius: 100vmax;
+      border-bottom-left-radius: 100vmax;
+
+      padding-left: 1.5rem;
+      line-height: 1;
+      height: 70px;
+
+      display: grid;
+      align-items: center;
+
+      &.active {
+        transition: 300ms;
+        font-size: 1.5rem;
+        opacity: 1;
+        background-color: var(--clr-primary-700);
+        margin-left: 1.5rem;
+      }
+
+      &.pending {
+        outline: 2px solid red;
+      }
+    }
+  }
+}
