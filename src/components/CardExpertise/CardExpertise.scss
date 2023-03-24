@@ -1,0 +1,22 @@
+.CardExpertise {
+  border: 2px solid var(--clr-primary-300);
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: var(--clr-primary-700);
+
+  .row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font-size: 1rem;
+      margin-left: 0.5rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+}

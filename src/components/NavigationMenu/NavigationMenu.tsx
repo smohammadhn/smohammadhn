@@ -35,7 +35,7 @@ export default function Test() {
               className={({ isActive }) => (isActive ? 'active' : undefined)}
               to={e.to}
             >
-              {e.title}
+              <h2>{e.title}</h2>
             </NavLink>
           </li>
           <li className="filler"></li>

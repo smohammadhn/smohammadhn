@@ -1,12 +1,12 @@
 .NavigationMenu {
-  width: 12rem;
+  width: 11.5rem;
 
   position: fixed;
   left: 2rem;
   top: 0;
   bottom: 0;
 
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: var(--clr-primary-400);
 
   display: flex;
@@ -33,14 +33,13 @@
       background-color: var(--clr-primary-900);
 
       text-align: center;
-      line-height: 1;
       height: 80px;
 
       display: grid;
       align-items: center;
 
       &.active {
-        opacity: 1;
+        font-size: 1.25rem;
         background-color: transparent;
       }
     }
