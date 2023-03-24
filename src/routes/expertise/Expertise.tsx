@@ -11,7 +11,7 @@ export default function Expertise() {
           title="Junior Node.js / Express.js"
           duration="3 Months"
         />
-        <CardExpertise title="Junior React.js / Next.js" duration="1 Months" />
+        <CardExpertise title="Junior React.js" duration="1 Months" />
       </div>
     </LayoutDefault>
   )

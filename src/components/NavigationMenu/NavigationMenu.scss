@@ -16,11 +16,14 @@
 
   li {
     width: 100%;
+    position: relative;
+    margin-block: 1rem;
 
     &.filler {
       flex-grow: 1;
       background-color: var(--clr-primary-900);
       max-height: 1rem;
+      margin: 0;
 
       &:first-child,
       &:last-child {
@@ -33,14 +36,41 @@
       background-color: var(--clr-primary-900);
 
       text-align: center;
-      height: 80px;
+      height: 70px;
 
       display: grid;
       align-items: center;
 
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        height: 1rem;
+        width: 100%;
+        background-color: var(--clr-primary-900);
+      }
+
+      &::after {
+        top: 100%;
+      }
+
+      &::before {
+        bottom: 100%;
+      }
+
       &.active {
         font-size: 1.25rem;
         background-color: transparent;
+
+        &::after {
+          border-top-left-radius: 100vmax;
+          border-top-right-radius: 100vmax;
+        }
+
+        &::before {
+          border-bottom-left-radius: 100vmax;
+          border-bottom-right-radius: 100vmax;
+        }
       }
     }
   }
