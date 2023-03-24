@@ -1,3 +1,4 @@
+import Button from '~/components/Button/Button'
 import CardExpertise from '~/components/CardExpertise/CardExpertise'
 import LayoutDefault from '~/components/LayoutDefault/LayoutDefault'
 import './Expertise.scss'
@@ -40,6 +41,13 @@ export default function Expertise() {
           skills={['React-router-dom', 'Function-based Components', 'Vite']}
           links={['https://smohammadhn.com']}
         />
+
+        <div className="action-links">
+          Click to see full list and description of
+          <Button to="/projects">My Projects</Button>
+          or
+          <Button to="/work-experience">My Work Experience</Button>
+        </div>
       </div>
     </LayoutDefault>
   )
