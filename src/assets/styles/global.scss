@@ -12,3 +12,24 @@ body {
   background-color: var(--clr-primary-700);
   color: var(--clr-primary-300);
 }
+
+.application-background {
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-image: url('/tile.png');
+    inset: 0;
+    opacity: 0.2;
+  }
+}
+
+.elevate-1 {
+  box-shadow: 0px 3px 6px 0px var(--clr-primary-400);
+  transition: 200ms;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px 2px var(--clr-primary-400);
+  }
+}

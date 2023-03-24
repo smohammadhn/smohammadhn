@@ -29,16 +29,14 @@ export default function Test() {
     <ul className="NavigationMenu">
       <li className="filler"></li>
       {navItems.map((e) => (
-        <>
-          <li>
-            <NavLink
-              className={({ isActive }) => (isActive ? 'active' : undefined)}
-              to={e.to}
-            >
-              <h2>{e.title}</h2>
-            </NavLink>
-          </li>
-        </>
+        <li key={e.title}>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : undefined)}
+            to={e.to}
+          >
+            <h2>{e.title}</h2>
+          </NavLink>
+        </li>
       ))}
       <li className="filler"></li>
     </ul>

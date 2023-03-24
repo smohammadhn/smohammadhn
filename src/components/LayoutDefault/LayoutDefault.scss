@@ -2,15 +2,9 @@
   padding-left: 15.5rem;
   display: flex;
   position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    background-image: url('/tile.png');
-    inset: 0;
-    opacity: 0.2;
-  }
+  max-width: 1500px;
+  margin-inline: auto;
+  position: relative;
 
   .pages-container {
     width: 100%;
