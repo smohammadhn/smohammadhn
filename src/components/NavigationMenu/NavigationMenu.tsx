@@ -21,7 +21,7 @@ export default function Test() {
     },
     {
       title: 'Contact me',
-      to: '/work-experience',
+      to: '/contact',
     },
   ]
 
