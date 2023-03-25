@@ -1,3 +1,4 @@
+import Button from '~/components/Button/Button'
 import LayoutDefault from '~/components/LayoutDefault/LayoutDefault'
 import SkillBadge from '~/components/SkillBadge/SkillBadge'
 import './WorkExperience.scss'
@@ -176,6 +177,12 @@ export default function WorkExperience() {
             </li>
           </ul>
         </div>
+      </div>
+
+      <div className="action-links">
+        I swear to GOD to gotta
+        <Button to="/contact">Contact Me</Button>
+        right now :)
       </div>
     </LayoutDefault>
   )
