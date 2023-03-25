@@ -46,7 +46,9 @@ export default function Contact() {
                 />
               </div>
               <h3>
-                <a href={e.link.href}>{e.link.text}</a>
+                <a href={e.link.href} target="_blank">
+                  {e.link.text}
+                </a>
               </h3>
             </li>
           ))}
