@@ -4,11 +4,11 @@ import './NavigationMenu.scss'
 export default function Test() {
   const navItems = [
     {
-      title: 'Who am I?',
+      title: 'About me',
       to: '/',
     },
     {
-      title: 'What can I do?',
+      title: 'Expertise',
       to: '/expertise',
     },
     {
