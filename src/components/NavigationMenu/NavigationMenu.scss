@@ -67,16 +67,16 @@
         &::after {
           border-top-left-radius: 100vmax;
           border-top-right-radius: 100vmax;
-          border-top: 1px solid var(--clr-primary-400);
-          box-shadow: 0px -8px 6px -4px var(--clr-primary-400);
+          border-top: 2px solid var(--clr-primary-400);
+          box-shadow: 0 -8px 6px -4px var(--clr-primary-400);
           z-index: -1;
         }
 
         &::before {
           border-bottom-left-radius: 100vmax;
           border-bottom-right-radius: 100vmax;
-          border-bottom: 1px solid var(--clr-primary-400);
-          box-shadow: 0px 8px 6px -4px var(--clr-primary-400);
+          border-bottom: 2px solid var(--clr-primary-400);
+          box-shadow: 0 8px 6px -4px var(--clr-primary-400);
           z-index: -1;
         }
       }

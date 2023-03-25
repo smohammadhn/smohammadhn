@@ -180,7 +180,7 @@ export default function WorkExperience() {
       </div>
 
       <div className="action-links">
-        I swear to GOD to gotta
+        I swear to GOD you gotta
         <Button to="/contact">Contact Me</Button>
         right now :)
       </div>
