@@ -4,8 +4,8 @@
 
   border-left: 3px solid var(--clr-primary-500);
   padding-left: $left-space;
-  padding-right: 0.5rem;
-  margin-left: 0.5rem;
+  padding-right: calc($left-space * 0.5);
+  margin-left: calc($left-space * 0.5);
 
   .work-exp {
     position: relative;
