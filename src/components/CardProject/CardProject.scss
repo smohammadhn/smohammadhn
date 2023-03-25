@@ -4,10 +4,13 @@
   background-color: var(--clr-primary-700);
   overflow: hidden;
   padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
 
   .inline-padding {
     padding-inline: 1rem;
   }
+
   .block-padding {
     padding-block: 0.5rem;
   }
@@ -24,6 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-bottom: auto;
   }
 
   .title {
@@ -36,7 +40,7 @@
   }
 
   img {
-    max-height: 200px;
+    aspect-ratio: 16 / 9;
     width: 100%;
     object-fit: cover;
   }

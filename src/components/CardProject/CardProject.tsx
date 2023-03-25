@@ -1,32 +1,52 @@
 import SkillBadge from '../SkillBadge/SkillBadge'
 import './CardProject.scss'
 
-export default function CardProject() {
+interface Props {
+  data: {
+    imgName?: string
+    title?: string
+    description?: string
+    techStack?: string[]
+    website?: string
+    repository?: string
+  }
+}
+
+export default function CardProject({ data }: Props) {
   return (
     <div className="CardProject elevate-1">
-      <img src="profile-square@500px.jpg" alt="" />
+      <img
+        src={`/project-images/${data.imgName || 'placeholder.svg'}`}
+        alt=""
+      />
       <h3 className="title accent-color inline-padding block-padding">
-        Rentifa
+        {data.title || 'Project Title'}
       </h3>
       <p className="description inline-padding block-padding">
-        A bilingual website providing car rental service in the country and
-        neighboring countries.
+        {data.description || 'Project description'}
       </p>
-      <div className="tech-list inline-padding block-padding">
-        <SkillBadge text="Vuetify" />
-        <SkillBadge text="Vuetify" />
-        <SkillBadge text="Vuetify" />
-      </div>
-      <div className="website inline-padding block-padding">
-        <span className="accent-color">WEBSITE:</span>
-        <a href="https://rentifa.com">https://rentifa.com</a>
-      </div>
-      <div className="website inline-padding block-padding">
-        <span className="accent-color">REPOSITORY:</span>
-        <a href="https://github.com/smohammadhn/NutricaSteel">
-          https://github.com/smohammadhn/NutricaSteellllllllllll
-        </a>
-      </div>
+
+      {Array.isArray(data.techStack) && data.techStack.length > 0 && (
+        <div className="tech-list inline-padding block-padding">
+          {data.techStack.map((e) => (
+            <SkillBadge text={e} />
+          ))}
+        </div>
+      )}
+
+      {data.website && (
+        <div className="website inline-padding block-padding">
+          <span className="accent-color">WEBSITE:</span>
+          <a href={data.website}>{data.website}</a>
+        </div>
+      )}
+
+      {data.repository && (
+        <div className="website inline-padding block-padding">
+          <span className="accent-color">REPOSITORY:</span>
+          <a href={data.repository}>{data.repository}</a>
+        </div>
+      )}
     </div>
   )
 }
