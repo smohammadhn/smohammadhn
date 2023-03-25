@@ -11,12 +11,4 @@
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     }
   }
-
-  .action-links {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-  }
 }
