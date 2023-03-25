@@ -6,6 +6,7 @@
   padding-left: $left-space;
   padding-right: calc($left-space * 0.5);
   margin-left: calc($left-space * 0.5);
+  max-width: 1000px;
 
   .work-exp {
     position: relative;

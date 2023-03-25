@@ -1,8 +1,11 @@
 .expertise-page {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   padding: 0.5rem;
+  max-width: 1000px;
+
+  // do not remove two lines below
+  overflow: hidden;
   width: 100%;
 
   > *:not(:last-child) {
