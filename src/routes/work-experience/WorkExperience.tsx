@@ -4,7 +4,7 @@ import './WorkExperience.scss'
 export default function WorkExperience() {
   return (
     <LayoutDefault>
-      <div>WorkExperience</div>
+      <div className="work-experience-page">WorkExperience</div>
     </LayoutDefault>
   )
 }
