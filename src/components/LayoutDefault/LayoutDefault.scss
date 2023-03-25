@@ -1,5 +1,5 @@
 .application {
-  padding-left: min(26vw, 15.5rem);
+  padding-left: min(21vw, 13.5rem);
   display: flex;
   position: relative;
   max-width: 1500px;
@@ -9,8 +9,8 @@
   .pages-container {
     width: 100%;
     min-height: 100vh;
-    padding: 1.5rem;
-    padding-left: 0;
+    padding-block: 2rem;
+    padding-inline: 0.75rem;
     display: grid;
     place-items: center;
     color: var(--clr-primary-300);
