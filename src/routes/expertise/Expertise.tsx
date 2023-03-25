@@ -31,14 +31,27 @@ export default function Expertise() {
           level="Junior"
           technology="Node.js / Express.js"
           duration="3 Months"
-          skills={['MongoDb', 'Mongoose', 'Jest', 'Winston', 'Joi', 'Config']}
+          skills={[
+            'Typescript',
+            'MongoDb',
+            'Mongoose',
+            'Jest',
+            'Winston',
+            'Joi',
+            'Config',
+          ]}
           links={['https://github.com/smohammadhn/my-vidly']}
         />
         <CardExpertise
           level="Junior"
           technology="React.js"
           duration="1 Months"
-          skills={['React-router-dom', 'Function-based Components', 'Vite']}
+          skills={[
+            'Typescript',
+            'React-router-dom',
+            'Vite',
+            'Function-based Components',
+          ]}
           links={['https://smohammadhn.com']}
         />
 
