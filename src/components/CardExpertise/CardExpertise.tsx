@@ -27,7 +27,7 @@ export default function CardExpertise(props: Props) {
       </div>
       <div className="links">
         {props.links.map((e) => (
-          <a href={e} target="_blank">
+          <a href={e} target="_blank" key={e}>
             {e}
           </a>
         ))}

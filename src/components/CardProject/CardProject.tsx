@@ -1,3 +1,4 @@
+import { RandomizeText } from '../RandomizeText/RandomizeText'
 import SkillBadge from '../SkillBadge/SkillBadge'
 import './CardProject.scss'
 
@@ -19,9 +20,13 @@ export default function CardProject({ data }: Props) {
         src={`/project-images/${data.imgName || 'placeholder.svg'}`}
         alt=""
       />
-      <h3 className="title accent-color inline-padding block-padding">
-        {data.title || 'Project Title'}
-      </h3>
+      <RandomizeText
+        className="title accent-color inline-padding block-padding"
+        text={data.title || 'Project Title'}
+        tagName="h3"
+        callOnMounted
+        intervalDuration={30}
+      />
       <p className="description inline-padding block-padding">
         {data.description || 'Project description'}
       </p>
@@ -29,7 +34,7 @@ export default function CardProject({ data }: Props) {
       {Array.isArray(data.techStack) && data.techStack.length > 0 && (
         <div className="tech-list inline-padding block-padding">
           {data.techStack.map((e) => (
-            <SkillBadge text={e} />
+            <SkillBadge text={e} key={e} />
           ))}
         </div>
       )}
