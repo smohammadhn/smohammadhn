@@ -44,7 +44,9 @@ export default function CardProject({ data }: Props) {
       {data.repository && (
         <div className="website inline-padding block-padding">
           <span className="accent-color">REPOSITORY:</span>
-          <a href={data.repository}>{data.repository}</a>
+          <a href={data.repository} target="_blank">
+            {data.repository}
+          </a>
         </div>
       )}
     </div>

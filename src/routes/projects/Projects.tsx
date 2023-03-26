@@ -19,6 +19,7 @@ export default function Projects() {
         'Web Performance',
       ],
       website: 'https://rentifa.com',
+      imgName: 'Rentifa.jpg',
     },
     {
       order: 100,
@@ -32,6 +33,7 @@ export default function Projects() {
         'Web Performance',
       ],
       website: 'https://bazarkhodro.ir',
+      imgName: 'Bazarkhodro.jpg',
     },
     {
       order: 1,
@@ -45,6 +47,7 @@ export default function Projects() {
         'Quill',
       ],
       website: 'https://tafrihnet.com',
+      imgName: 'tafrihnet.jpg',
     },
     {
       order: 5,
@@ -72,7 +75,8 @@ export default function Projects() {
         'Data Validation',
         'Logging & Error Handling',
       ],
-      repository: 'https://github.com/smohammadhn/my-vidly',
+      website: 'https://nutricasteel.com',
+      imgName: 'NutricaSteel.jpg',
     },
     {
       order: 4,
@@ -81,6 +85,7 @@ export default function Projects() {
       techStack: ['React', 'Typescript', 'React-router-dom'],
       website: 'https://smohammadhn.com/',
       repository: 'https://github.com/smohammadhn/smohammadhn',
+      imgName: 'smohammadhn.jpg',
     },
   ]
 
@@ -91,7 +96,7 @@ export default function Projects() {
           {listOfProjects
             .sort((a, b) => a.order - b.order)
             .map((e) => (
-              <CardProject data={e} />
+              <CardProject data={e} key={e.title} />
             ))}
         </div>
 
