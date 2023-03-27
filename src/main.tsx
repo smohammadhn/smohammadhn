@@ -9,9 +9,9 @@ import Projects from '~/routes/projects/Projects'
 import WorkExperience from '~/routes/work-experience/WorkExperience'
 import Contact from './routes/contact/Contact'
 
-import { createHashRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <Introduction />,
