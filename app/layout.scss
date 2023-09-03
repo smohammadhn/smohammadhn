@@ -1,0 +1,15 @@
+.root {
+  display: grid;
+  grid-template-columns: clamp(300px, 23%, 500px) 1fr;
+  max-width: 1500px;
+  margin-inline: auto;
+  position: relative;
+
+  // for each page
+  main {
+    padding: 0.5rem;
+    overflow-y: auto;
+    max-height: 100dvh;
+    grid-column: 2;
+  }
+}

@@ -1,7 +1,22 @@
 :root {
-  --clr-primary-300: #e0ffff;
-  --clr-primary-400: #a4dded;
-  --clr-primary-500: #0093af;
-  --clr-primary-700: #0c2340;
-  --clr-primary-900: #041e42;
+  --clr-background: #1f1f21;
+  --clr-accent: #71e694;
+  --clr-font-primary: white;
+  --clr-font-secondary: #9a9a9a;
+}
+
+.background-colored {
+  background-color: var(--clr-background);
+}
+
+.font-color-accent {
+  color: var(--clr-accent);
+}
+
+.font-color-primary {
+  color: var(--clr-font-primary);
+}
+
+.font-color-secondary {
+  color: var(--clr-font-secondary);
 }

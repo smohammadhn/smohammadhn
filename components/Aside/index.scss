@@ -1,0 +1,8 @@
+aside.aside {
+  border: 1px solid rgba($color: #fff, $alpha: 0.2);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  inset: 1rem;
+  position: absolute;
+  grid-column: 1 / 1;
+}
