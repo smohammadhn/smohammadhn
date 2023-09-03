@@ -1,8 +1,24 @@
-import './globals.css'
+import 'assets/styles/global.scss'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import Image from 'next/image'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+// global fonts
+const lato = localFont({
+  src: [
+    {
+      path: '../assets/fonts/Lato/Lato-Bold.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/Lato/Lato-Black.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +31,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={lato.className}>
+      <body>
+        {children}
+
+        <Image
+          id="main-background-image"
+          src={'/main-background.jpeg'}
+          alt="Picture of the author"
+          fill
+        />
+      </body>
     </html>
   )
 }

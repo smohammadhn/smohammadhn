@@ -1,0 +1,39 @@
+@import '@/assets/styles/reset.css';
+@import '@/assets/styles/variables.css';
+
+body {
+  background-color: black;
+  color: var(--clr-primary-300);
+  position: relative;
+
+  *::selection {
+    background-color: black;
+    color: var(--clr-primary-900);
+  }
+}
+
+#main-background-image {
+  object-fit: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.elevate-1 {
+  box-shadow: 0px 3px 6px 0px var(--clr-primary-400);
+  transition: 200ms;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px 2px var(--clr-primary-400);
+  }
+}
+
+.action-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
