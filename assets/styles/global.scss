@@ -1,11 +1,17 @@
 @import '@/assets/styles/reset.css';
 @import '@/assets/styles/variables.css';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  background-color: black;
   color: var(--clr-font-primary);
   height: 100vh;
-  position: relative;
+
+  & > div {
+    position: relative;
+  }
 }
 
 #main-background-image {

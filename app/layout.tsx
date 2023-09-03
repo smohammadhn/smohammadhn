@@ -2,11 +2,12 @@ import 'assets/styles/global.scss'
 import './layout.scss'
 
 import type { Metadata } from 'next'
+import { Providers } from './providers'
 
 import Image from 'next/image'
 import localFont from 'next/font/local'
 
-import Aside from 'components/Aside'
+import Aside from '@/components/Aside'
 
 // global fonts
 const lato = localFont({
@@ -37,20 +38,23 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" dir="ltr" className={lato.className}>
+    <html lang="en" dir="ltr" className={lato.className + ' dark'}>
       <body>
-        <div className="root">
-          <Aside />
-          {children}
-        </div>
+        <Providers>
+          <div className="root">
+            <Aside />
 
-        {/* background image */}
-        <Image
-          id="main-background-image"
-          src={'/main-background.jpeg'}
-          alt="Picture of the author"
-          fill
-        />
+            {children}
+          </div>
+
+          {/* background image */}
+          <Image
+            id="main-background-image"
+            src={'/main-background.jpeg'}
+            alt="Picture of the author"
+            fill
+          />
+        </Providers>
       </body>
     </html>
   )
