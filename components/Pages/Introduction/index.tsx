@@ -1,10 +1,74 @@
+import './index.scss'
 import SectionStarterBadge from '@/components/SectionStarterBadge'
 import { AiOutlineHome } from 'react-icons/ai'
+import { BsArrowDownShort } from 'react-icons/bs'
 
 export default function Introduction() {
   return (
-    <>
-      <SectionStarterBadge text="Introduction" icon={<AiOutlineHome />} />
-    </>
+    <section>
+      <SectionStarterBadge
+        text="Introduction"
+        icon={<AiOutlineHome />}
+        bottomSpacer
+      />
+
+      <p className="introduction__title">
+        Say Hi from <span className="font-color-accent">Mohammad</span>,
+        <br />
+        FullStack Software Developer
+      </p>
+
+      <p className="introduction__subtitle font-color-secondary">
+        give me your design and I&apos;ll transform it into code.
+        <br />
+        Just like that! 🫰
+      </p>
+
+      <div className="introduction__floating-btn--container">
+        <button className="introduction__floating-btn">
+          <span className="center-icon">
+            <BsArrowDownShort size={30} />
+          </span>
+
+          <svg className="curved" viewBox="30 35 140 130">
+            <path
+              fill="transparent"
+              id="curve"
+              d="
+            M 50, 100
+            a 50,50 0 1,1 100,0
+            a 50,50 0 1,1 -100,0
+          "
+            />
+            <text width="500">
+              <textPath href="#curve">
+                MY PROJECTS &nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp; MY PROJECTS
+                &nbsp;&nbsp; .
+              </textPath>
+            </text>
+          </svg>
+        </button>
+      </div>
+
+      <ul className="introduction__stats">
+        <li>
+          <span className="font-color-accent">5+</span>
+          <span className="font-color-secondary">
+            YEARS OF
+            <br />
+            EXPERIENCE
+          </span>
+        </li>
+
+        <li>
+          <span className="font-color-accent">15+</span>
+          <span className="font-color-secondary">
+            PROJECTS COMPLETED
+            <br />
+            /IN PROGRESS
+          </span>
+        </li>
+      </ul>
+    </section>
   )
 }

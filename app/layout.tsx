@@ -45,6 +45,10 @@ export default function RootLayout({
             <Aside />
 
             {children}
+
+            <nav style={{ borderLeft: '1px solid var(--clr-font-secondary)' }}>
+              nav
+            </nav>
           </div>
 
           {/* background image */}

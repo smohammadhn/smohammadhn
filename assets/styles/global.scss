@@ -1,5 +1,5 @@
 @import '@/assets/styles/reset.css';
-@import '@/assets/styles/variables.css';
+@import '@/assets/styles/variables.scss';
 
 @tailwind base;
 @tailwind utilities;
@@ -11,10 +11,6 @@ body {
 
   & > div {
     position: relative;
-  }
-
-  .root {
-    height: 100vh;
   }
 }
 

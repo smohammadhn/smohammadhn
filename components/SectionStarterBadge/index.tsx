@@ -5,6 +5,7 @@ import { Button } from '@nextui-org/button'
 interface Props {
   text: string
   icon?: ReactNode
+  bottomSpacer?: boolean
 }
 
 export default function SectionStarterBadge(props: Props) {
@@ -15,8 +16,9 @@ export default function SectionStarterBadge(props: Props) {
       size="sm"
       variant="bordered"
       startContent={props.icon}
+      style={{ marginBottom: props.bottomSpacer ? '4rem' : '0' }}
     >
-      {props.text}
+      {props.text.toUpperCase()}
     </Button>
   )
 }

@@ -17,7 +17,7 @@ export default function Aside() {
         <span className="aside__heading--role">
           FullStack Software
           <br />
-          developer
+          Developer
         </span>
       </div>
 

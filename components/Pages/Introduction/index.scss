@@ -1,0 +1,68 @@
+.introduction {
+  &__title {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  &__floating-btn {
+    font-size: 0.9rem;
+    width: 125px;
+    height: 125px;
+    border: 1px solid var(--clr-border);
+    border-radius: 100%;
+    position: relative;
+    letter-spacing: 1.5px;
+
+    &--container {
+      text-align: end;
+      margin-inline-end: 10vw;
+    }
+
+    .center-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    svg.curved {
+      fill: white;
+      opacity: 0.8;
+      animation: circleAnimation 10s linear infinite;
+    }
+  }
+
+  &__stats {
+    // is a ul
+    display: flex;
+    column-gap: 3rem;
+
+    li {
+      display: flex;
+      flex-direction: column;
+
+      span:nth-child(1) {
+        font-size: 4.5rem;
+      }
+
+      span:nth-child(2) {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
