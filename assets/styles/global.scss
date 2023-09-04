@@ -22,6 +22,14 @@ body {
   z-index: -1;
 }
 
-section.bottom-spacer {
-  margin-bottom: 10rem;
+section {
+  &.bottom-spacer {
+    margin-bottom: 10rem;
+  }
+
+  .section__primary-title {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+  }
 }

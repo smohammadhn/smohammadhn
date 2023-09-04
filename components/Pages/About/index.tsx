@@ -11,7 +11,7 @@ export default function About(props: Props) {
     <section className={props.bottomSpacer ? 'bottom-spacer' : ''}>
       <SectionStarterBadge text="About" icon={<AiOutlineUser />} bottomSpacer />
 
-      <p className="about__title">
+      <p className="section__primary-title">
         Every professional work begins with an even{' '}
         <span className="font-color-accent">better story</span>
       </p>
