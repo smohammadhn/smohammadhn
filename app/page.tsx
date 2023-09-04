@@ -1,8 +1,11 @@
 import CardExpertise from '@/components/CardExpertise'
+import Introduction from '@/components/Pages/Introduction'
 
 export default function Home() {
   return (
     <main>
+      <Introduction bottomSpacer />
+
       <CardExpertise
         level="Senior"
         technology="Vue.js / Nuxt.js"

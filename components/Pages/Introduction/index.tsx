@@ -3,9 +3,13 @@ import SectionStarterBadge from '@/components/SectionStarterBadge'
 import { AiOutlineHome } from 'react-icons/ai'
 import { BsArrowDownShort } from 'react-icons/bs'
 
-export default function Introduction() {
+interface Props {
+  bottomSpacer?: boolean
+}
+
+export default function Introduction(props: Props) {
   return (
-    <section>
+    <section style={{ marginBottom: props.bottomSpacer ? '4rem' : '0' }}>
       <SectionStarterBadge
         text="Introduction"
         icon={<AiOutlineHome />}
