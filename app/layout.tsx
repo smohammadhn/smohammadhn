@@ -51,7 +51,7 @@ export default function RootLayout({
           <Image
             id="main-background-image"
             src={'/main-background.jpeg'}
-            alt="Picture of the author"
+            alt="Background image"
             fill
           />
         </Providers>
