@@ -8,6 +8,7 @@ import Image from 'next/image'
 import localFont from 'next/font/local'
 
 import Aside from '@/components/Aside'
+import Navigation from '@/components/Navigation'
 
 // global fonts
 const lato = localFont({
@@ -46,9 +47,7 @@ export default function RootLayout({
 
             {children}
 
-            <nav style={{ borderLeft: '1px solid var(--clr-font-secondary)' }}>
-              nav
-            </nav>
+            <Navigation />
           </div>
 
           {/* background image */}

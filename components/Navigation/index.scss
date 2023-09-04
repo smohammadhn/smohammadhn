@@ -1,0 +1,26 @@
+.navigation {
+  position: sticky;
+  top: 1rem;
+  left: 1rem;
+  height: calc(100% - 2rem);
+  display: grid;
+  place-items: center;
+
+  ul {
+    border: 1px solid var(--clr-border);
+    padding: 1rem;
+    border-radius: 100vmax;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+
+    svg {
+      fill: var(--clr-font-secondary);
+      transition: 200ms;
+
+      &:hover {
+        fill: var(--clr-accent);
+      }
+    }
+  }
+}

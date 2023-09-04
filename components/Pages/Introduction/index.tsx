@@ -23,7 +23,7 @@ export default function Introduction(props: Props) {
       </p>
 
       <p className="introduction__subtitle font-color-secondary">
-        give me your design and I&apos;ll transform it into code.
+        Give me your design and I&apos;ll transform it into code.
         <br />
         Just like that! 🫰
       </p>

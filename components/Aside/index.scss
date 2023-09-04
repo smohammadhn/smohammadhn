@@ -1,10 +1,6 @@
 .aside {
-  border: 1px solid rgba($color: #fff, $alpha: 0.2);
+  border: 1px solid var(--clr-border);
   border-radius: 1.25rem;
-  overflow: hidden;
-  inset: 1rem;
-  position: absolute;
-  grid-column: 1 / 1;
   padding-block: 2rem;
   padding-inline: 2.25rem;
   display: flex;
@@ -12,6 +8,11 @@
   align-items: center;
   text-align: center;
   row-gap: 2rem;
+
+  position: sticky;
+  top: 1rem;
+  left: 1rem;
+  height: calc(100% - 2rem);
 
   & > * {
     width: 100%;

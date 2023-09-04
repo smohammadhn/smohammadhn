@@ -4,12 +4,11 @@
   max-width: 1500px;
   margin-inline: auto;
   position: relative;
-  height: 100vh;
+  overflow-y: auto;
 
   // for each page
   main {
     padding-inline: 0.5rem;
-    overflow-y: auto;
     max-height: 100dvh;
     grid-column: 3;
     padding-block: 3rem;
