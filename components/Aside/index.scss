@@ -1,8 +1,83 @@
-aside.aside {
+.aside {
   border: 1px solid rgba($color: #fff, $alpha: 0.2);
   border-radius: 1.25rem;
   overflow: hidden;
   inset: 1rem;
   position: absolute;
   grid-column: 1 / 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 2rem;
+
+  & > * {
+    width: 100%;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    &--logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &--role {
+      font-size: 0.8rem;
+      text-align: end;
+    }
+  }
+
+  &__avatar {
+    border-radius: inherit;
+  }
+
+  &__text-primary {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  &__text-secondary {
+    font-size: 0.7rem;
+    opacity: 0.7;
+  }
+
+  &__icons {
+    display: flex;
+    column-gap: 0.5rem;
+    justify-content: center;
+    flex-grow: 1;
+
+    a {
+      $size: 40px;
+
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--clr-font-secondary);
+      width: $size;
+      height: $size;
+      border-radius: 100%;
+      transition: 200ms;
+
+      svg {
+        $size: 14px;
+
+        fill: var(--clr-font-secondary);
+        width: $size;
+        height: $size;
+      }
+
+      &:hover {
+        border: 1px solid var(--clr-accent);
+        svg {
+          fill: var(--clr-accent);
+        }
+      }
+    }
+  }
 }

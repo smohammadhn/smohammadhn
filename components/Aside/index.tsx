@@ -2,6 +2,10 @@ import './index.scss'
 import Image from 'next/image'
 import { Button } from '@nextui-org/button'
 import { FaBeer } from 'react-icons/fa'
+import { MdOutlineAlternateEmail } from 'react-icons/md'
+import { AiOutlinePhone } from 'react-icons/ai'
+import { AiFillLinkedin } from 'react-icons/ai'
+import { AiOutlineGithub } from 'react-icons/ai'
 
 export default function Aside() {
   const color = 'secondary'
@@ -25,20 +29,33 @@ export default function Aside() {
         height={500}
       />
 
-      <div className="aside__text-primary">
-        Seyed Mohammad Hosseininejad smohammadhnd@gmail.com
+      <h1 className="aside__text-primary">
+        Seyed Mohammad Hosseininejad
+        <br />
+        smohammadhnd@gmail.com
+      </h1>
+
+      <div className="aside__text-secondary">
+        @2023 No copyright, make yourself at home :)
       </div>
 
-      <div className="aside__text-secondary">@2023 feel free to copy</div>
-
       <div className="aside__icons">
-        <span>
-          <FaBeer size={30} color="red" />
-        </span>
+        <a>
+          <MdOutlineAlternateEmail />
+        </a>
+        <a>
+          <AiOutlinePhone />
+        </a>
+        <a>
+          <AiFillLinkedin />
+        </a>
+        <a>
+          <AiOutlineGithub />
+        </a>
       </div>
 
       <Button color="success" radius="full" fullWidth endContent={<FaBeer />}>
-        Take a photo
+        Let&apos;s talk
       </Button>
     </aside>
   )
