@@ -1,6 +1,6 @@
 import './index.scss'
-import { FaBeer } from 'react-icons/fa'
 import { AiOutlineHome } from 'react-icons/ai'
+import { AiOutlineUser } from 'react-icons/ai'
 
 export default function Aside() {
   return (
@@ -13,37 +13,37 @@ export default function Aside() {
         </li>
         <li>
           <button>
-            <FaBeer />
+            <AiOutlineUser />
           </button>
         </li>
         <li>
           <button>
-            <FaBeer />
+            <AiOutlineUser />
           </button>
         </li>
         <li>
           <button>
-            <FaBeer />
+            <AiOutlineUser />
           </button>
         </li>
         <li>
           <button>
-            <FaBeer />
+            <AiOutlineUser />
           </button>
         </li>
         <li>
           <button>
-            <FaBeer />
+            <AiOutlineUser />
           </button>
         </li>
         <li>
           <button>
-            <FaBeer />
+            <AiOutlineUser />
           </button>
         </li>
         <li>
           <button>
-            <FaBeer />
+            <AiOutlineUser />
           </button>
         </li>
       </ul>

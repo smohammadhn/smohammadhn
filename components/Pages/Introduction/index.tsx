@@ -9,7 +9,7 @@ interface Props {
 
 export default function Introduction(props: Props) {
   return (
-    <section style={{ marginBottom: props.bottomSpacer ? '4rem' : '0' }}>
+    <section className={props.bottomSpacer ? 'bottom-spacer' : ''}>
       <SectionStarterBadge
         text="Introduction"
         icon={<AiOutlineHome />}

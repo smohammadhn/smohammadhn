@@ -1,10 +1,12 @@
 import CardExpertise from '@/components/CardExpertise'
 import Introduction from '@/components/Pages/Introduction'
+import About from '@/components/Pages/About'
 
 export default function Home() {
   return (
     <main>
       <Introduction bottomSpacer />
+      <About bottomSpacer />
 
       <CardExpertise
         level="Senior"
