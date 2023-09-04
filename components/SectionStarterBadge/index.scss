@@ -1,0 +1,11 @@
+.SectionStarterBadge {
+  border-width: 1px;
+
+  &:hover {
+    border-color: var(--clr-accent);
+
+    svg {
+      fill: var(--clr-accent);
+    }
+  }
+}

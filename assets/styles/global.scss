@@ -7,10 +7,14 @@
 
 body {
   color: var(--clr-font-primary);
-  height: 100vh;
+  position: relative;
 
   & > div {
     position: relative;
+  }
+
+  .root {
+    height: 100vh;
   }
 }
 

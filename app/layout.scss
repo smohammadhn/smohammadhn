@@ -1,6 +1,6 @@
 .root {
   display: grid;
-  grid-template-columns: clamp(300px, 23%, 500px) 1fr;
+  grid-template-columns: 350px 1fr;
   max-width: 1500px;
   margin-inline: auto;
   position: relative;

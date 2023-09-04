@@ -36,10 +36,10 @@ export default function Aside() {
       </h1>
 
       <div className="aside__text-secondary">
-        @2023 No copyright, make yourself at home :)
+        @2023 No copyright, make yourself at home 😁
       </div>
 
-      <div className="aside__icons">
+      <ul className="aside__icons">
         <a>
           <MdOutlineAlternateEmail />
         </a>
@@ -52,7 +52,7 @@ export default function Aside() {
         <a>
           <AiOutlineGithub />
         </a>
-      </div>
+      </ul>
 
       <Button color="success" radius="full" fullWidth endContent={<FaBeer />}>
         Let&apos;s talk
