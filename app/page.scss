@@ -1,0 +1,4 @@
+.landing {
+  display: grid;
+  grid-template-columns: 1fr calc(2 * 6vw);
+}

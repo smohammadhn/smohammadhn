@@ -4,12 +4,9 @@ import './layout.scss'
 import type { Metadata } from 'next'
 import { Providers } from './providers'
 
-import Image from 'next/image'
 import localFont from 'next/font/local'
 
 import Aside from '@/components/Aside'
-import Navigation from '@/components/Navigation'
-
 // global fonts
 const lato = localFont({
   src: [
@@ -43,21 +40,12 @@ export default function RootLayout({
       <body>
         <Providers>
           <div className="root">
-            <Aside />
+            <div className="container">
+              <Aside />
 
-            {children}
-
-            <Navigation />
+              {children}
+            </div>
           </div>
-
-          {/* background image */}
-          <Image
-            id="main-background-image"
-            src={'/main-background.jpeg'}
-            alt="Background image"
-            fill
-            sizes="100vw"
-          />
         </Providers>
       </body>
     </html>
