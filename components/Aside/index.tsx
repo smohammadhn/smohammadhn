@@ -6,6 +6,7 @@ import { MdOutlineAlternateEmail } from 'react-icons/md'
 import { AiOutlinePhone } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiOutlineGithub } from 'react-icons/ai'
+import Link from 'next/link'
 
 export default function Aside() {
   const color = 'secondary'
@@ -13,7 +14,9 @@ export default function Aside() {
   return (
     <aside className="aside">
       <div className="aside__heading">
-        <span className="aside__heading--logo">SMHN</span>
+        <Link href="/" className="aside__heading--logo">
+          SMHN
+        </Link>
         <span className="aside__heading--role">
           FullStack Software
           <br />

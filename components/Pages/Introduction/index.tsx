@@ -1,5 +1,8 @@
 import './index.scss'
+
+import Link from 'next/link'
 import SectionStarterBadge from '@/components/SectionStarterBadge'
+
 import { AiOutlineHome } from 'react-icons/ai'
 import { BsArrowDownShort } from 'react-icons/bs'
 
@@ -28,7 +31,10 @@ export default function Introduction(props: Props) {
         Just like that! 🫰
       </p>
 
-      <div className="introduction__floating-btn--container">
+      <Link
+        href="#section-projects"
+        className="introduction__floating-btn--container"
+      >
         <button className="introduction__floating-btn">
           <span className="center-icon">
             <BsArrowDownShort size={30} />
@@ -52,7 +58,7 @@ export default function Introduction(props: Props) {
             </text>
           </svg>
         </button>
-      </div>
+      </Link>
 
       <ul className="introduction__stats">
         <li>

@@ -95,7 +95,10 @@ export default function Projects(props: Props) {
   ]
 
   return (
-    <section className={props.bottomSpacer ? 'bottom-spacer' : ''}>
+    <section
+      id="section-projects"
+      className={props.bottomSpacer ? 'bottom-spacer' : ''}
+    >
       <SectionStarterBadge text="Projects" icon={<BsGrid1X2 />} bottomSpacer />
 
       <p className="section__primary-title">
