@@ -12,7 +12,7 @@ export default function Aside() {
   const color = 'secondary'
 
   return (
-    <aside className="aside invisible">
+    <aside className="aside">
       <div className="aside--container">
         <div className="aside__heading">
           <Link href="/" className="aside__heading--logo">
