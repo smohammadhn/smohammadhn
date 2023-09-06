@@ -1,4 +1,4 @@
-import CardExpertise from '@/components/CardExpertise'
+import Expertise from '@/components/Pages/Expertise'
 import Introduction from '@/components/Pages/Introduction'
 import About from '@/components/Pages/About'
 import WorkExperience from '@/components/Pages/WorkExperience'
@@ -9,9 +9,7 @@ export default function Home() {
       <Introduction bottomSpacer />
       <About bottomSpacer />
       <WorkExperience bottomSpacer />
-      <Introduction bottomSpacer />
-      <About bottomSpacer />
-      <WorkExperience bottomSpacer />
+      <Expertise />
     </main>
   )
 }
