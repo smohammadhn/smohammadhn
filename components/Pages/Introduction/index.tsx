@@ -12,9 +12,12 @@ interface Props {
 
 export default function Introduction(props: Props) {
   return (
-    <section className={props.bottomSpacer ? 'bottom-spacer' : ''}>
+    <section
+      id="section-introduction"
+      className={props.bottomSpacer ? 'bottom-spacer' : ''}
+    >
       <SectionStarterBadge
-        text="Introduction"
+        text="introduction"
         icon={<AiOutlineHome />}
         bottomSpacer
       />

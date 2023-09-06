@@ -9,9 +9,12 @@ interface Props {
 
 export default function WorkExperience(props: Props) {
   return (
-    <section className={props.bottomSpacer ? 'bottom-spacer' : ''}>
+    <section
+      id="section-work-experience"
+      className={props.bottomSpacer ? 'bottom-spacer' : ''}
+    >
       <SectionStarterBadge
-        text="WORK EXPERIENCE"
+        text="work-experience"
         icon={<LiaSuitcaseSolid />}
         bottomSpacer
       />

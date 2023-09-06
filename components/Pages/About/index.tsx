@@ -8,8 +8,11 @@ interface Props {
 
 export default function About(props: Props) {
   return (
-    <section className={props.bottomSpacer ? 'bottom-spacer' : ''}>
-      <SectionStarterBadge text="About" icon={<AiOutlineUser />} bottomSpacer />
+    <section
+      id="section-about"
+      className={props.bottomSpacer ? 'bottom-spacer' : ''}
+    >
+      <SectionStarterBadge text="about" icon={<AiOutlineUser />} bottomSpacer />
 
       <p className="section__primary-title">
         Every professional work begins with an even{' '}

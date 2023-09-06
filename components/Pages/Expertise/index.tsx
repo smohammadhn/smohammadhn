@@ -60,9 +60,12 @@ export default function Expertise(props: Props) {
   ]
 
   return (
-    <section className={props.bottomSpacer ? 'bottom-spacer' : ''}>
+    <section
+      id="section-expertise"
+      className={props.bottomSpacer ? 'bottom-spacer' : ''}
+    >
       <SectionStarterBadge
-        text="Expertise"
+        text="expertise"
         icon={<BsHddStack />}
         bottomSpacer
       />
