@@ -6,4 +6,13 @@
   width: fit-content;
   height: fit-content;
   white-space: nowrap;
+
+  &.theme-light {
+    background-color: var(--clr-font-primary);
+    color: var(--clr-background);
+    font-weight: 400;
+    font-size: 0.825rem;
+    border-radius: 100vmax;
+    padding: 0.2rem 0.5rem;
+  }
 }

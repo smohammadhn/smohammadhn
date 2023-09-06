@@ -56,6 +56,7 @@ export default function RootLayout({
             src={'/main-background.jpeg'}
             alt="Background image"
             fill
+            sizes="100vw"
           />
         </Providers>
       </body>
