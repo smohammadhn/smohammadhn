@@ -8,19 +8,23 @@
 
   ul {
     border: 1px solid var(--clr-border);
-    padding: 1rem;
+    padding: 0.3rem;
     border-radius: 100vmax;
     display: flex;
     flex-direction: column;
-    row-gap: 0.5rem;
+    row-gap: 0.25rem;
+
+    li {
+      &:hover {
+        svg {
+          fill: var(--clr-accent);
+        }
+      }
+    }
 
     svg {
       fill: var(--clr-font-secondary);
       transition: 200ms;
-
-      &:hover {
-        fill: var(--clr-accent);
-      }
     }
   }
 }
