@@ -3,9 +3,11 @@ $bpHideAside: 900px;
 .navigation {
   display: grid;
   place-items: center;
-  height: 100dvh;
+  height: 100vh;
+  height: 100lvh;
   position: sticky;
   top: 0;
+  transition: 400ms;
 
   @media screen and (max-width: $bpHideAside) {
     position: fixed;
