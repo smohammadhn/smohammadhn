@@ -6,15 +6,12 @@
 
   &.full-width {
     grid-column: 1 / -1;
-
-    .CardProject--image-container {
-      height: 400px;
-    }
   }
 
   &--image-container {
     position: relative;
-    height: 200px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     margin-bottom: 1rem;
     border-radius: 0.85rem;
     overflow: hidden;

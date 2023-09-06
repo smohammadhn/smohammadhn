@@ -18,7 +18,7 @@ export default function SectionStarterBadge(props: Props) {
         size="sm"
         variant="bordered"
         startContent={props.icon}
-        style={{ marginBottom: props.bottomSpacer ? '4rem' : '0' }}
+        style={{ marginBottom: props.bottomSpacer ? 'min(4rem, 12vw)' : '0' }}
       >
         <h2>{props.text.toUpperCase()}</h2>
       </Button>

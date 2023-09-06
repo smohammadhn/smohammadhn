@@ -1,5 +1,4 @@
 import './index.scss'
-import { RandomizeText } from '@/components/RandomizeText'
 import SkillBadge from '@/components/SkillBadge'
 import Image from 'next/image'
 

@@ -1,8 +1,14 @@
+$bpHideAside: 900px;
+
 .landing {
   display: grid;
-  grid-template-columns: 1fr calc(2 * 6vw);
+  grid-template-columns: 1fr 13vw;
+
+  @media screen and (max-width: $bpHideAside) {
+    grid-template-columns: 1fr;
+  }
 
   main {
-    padding-inline-end: 0;
+    padding-inline-end: min(1rem, 5vw);
   }
 }

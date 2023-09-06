@@ -5,7 +5,7 @@
   .work-exp {
     position: relative;
     width: 100%;
-    padding-left: 4rem;
+    padding-left: min(4rem, 8vw);
 
     &:not(:last-child) {
       margin-bottom: 5rem;
