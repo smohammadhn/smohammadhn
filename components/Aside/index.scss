@@ -5,6 +5,7 @@ $bpHideAside: 900px;
   place-items: center;
   height: 100vh;
   height: 100dvh;
+  transition: 200ms;
 
   position: sticky;
   top: 0;
@@ -13,12 +14,20 @@ $bpHideAside: 900px;
 
   @media screen and (max-width: $bpHideAside) {
     position: fixed;
-    inset: 0;
-    z-index: 10;
+    right: 0;
+    left: auto;
+    width: 100vw;
+    z-index: 20;
     background-color: var(--clr-background);
 
-    &.invisible {
-      left: -100%;
+    &.invisiblee {
+      right: -100%;
+
+      .aside--toggler {
+        button {
+          transform: rotate(0);
+        }
+      }
     }
   }
 
@@ -105,6 +114,22 @@ $bpHideAside: 900px;
           fill: var(--clr-accent);
         }
       }
+    }
+  }
+
+  &--toggler {
+    background-color: var(--clr-background);
+    border: 1px solid var(--clr-border);
+    border-inline-end: none !important;
+    border-radius: 1rem 0 0 1rem !important;
+
+    position: fixed !important;
+    top: 1rem;
+    right: 0;
+    z-index: 100 !important;
+
+    button {
+      transform: rotate(180deg);
     }
   }
 }
