@@ -3,7 +3,7 @@
 import './index.scss'
 import Image from 'next/image'
 import { Button } from '@nextui-org/button'
-import { FaBeer } from 'react-icons/fa'
+import { FaTelegramPlane } from 'react-icons/fa'
 import { MdOutlineAlternateEmail } from 'react-icons/md'
 import { AiOutlinePhone, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
 import { BiSolidChevronsLeft } from 'react-icons/bi'
@@ -56,23 +56,30 @@ export default function Aside() {
         </div>
 
         <ul className="aside__icons">
-          <a>
+          <a href="mailto:smohammadhnd@gmail.com" target="_blank">
             <MdOutlineAlternateEmail />
           </a>
-          <a>
+          <a href="tel:+989021211074">
             <AiOutlinePhone />
           </a>
-          <a>
+          <a href="https://www.linkedin.com/in/smohammadhn/" target="_blank">
             <AiFillLinkedin />
           </a>
-          <a>
+          <a href="https://github.com/smohammadhn" target="_blank">
             <AiOutlineGithub />
           </a>
         </ul>
 
-        <Button color="success" radius="full" fullWidth endContent={<FaBeer />}>
-          Let&apos;s talk
-        </Button>
+        <a href="https://t.me/smohammadhn" target="_blank">
+          <Button
+            color="success"
+            radius="full"
+            fullWidth
+            endContent={<FaTelegramPlane />}
+          >
+            Let&apos;s chat
+          </Button>
+        </a>
       </div>
 
       <div className="aside--toggler">
