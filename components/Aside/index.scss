@@ -20,6 +20,14 @@ $bpHideAside: 900px;
     z-index: 20;
     background-color: var(--clr-background);
 
+    &--toggler {
+      display: block !important;
+
+      button {
+        transform: rotate(180deg);
+      }
+    }
+
     &.invisiblee {
       right: -100%;
 
@@ -122,14 +130,10 @@ $bpHideAside: 900px;
     border: 1px solid var(--clr-border);
     border-inline-end: none !important;
     border-radius: 1rem 0 0 1rem !important;
-
     position: fixed !important;
-    top: 1rem;
+    top: 2rem;
     right: 0;
     z-index: 100 !important;
-
-    button {
-      transform: rotate(180deg);
-    }
+    display: none;
   }
 }

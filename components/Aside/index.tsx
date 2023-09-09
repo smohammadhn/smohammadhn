@@ -23,7 +23,11 @@ export default function Aside() {
     <aside className={classNameAside}>
       <div className="aside--container">
         <div className="aside__heading">
-          <Link href="/" className="aside__heading--logo">
+          <Link
+            href="/"
+            className="aside__heading--logo"
+            onClick={toggleAsideVisbility}
+          >
             SMHN
           </Link>
           <span className="aside__heading--role">
