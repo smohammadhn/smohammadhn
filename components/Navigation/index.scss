@@ -3,6 +3,9 @@ $bpHideAside: 900px;
 .navigation {
   display: grid;
   place-items: center;
+  grid-template-rows: 1fr auto;
+  padding-bottom: 3rem;
+
   height: 100vh;
   height: 100lvh;
   position: sticky;
@@ -15,11 +18,23 @@ $bpHideAside: 900px;
     right: 0;
     left: initial;
 
-    ul {
+    ul,
+    .back-to-top {
       background-color: var(--clr-background);
       border-inline-end: none !important;
       border-radius: 1rem 0 0 1rem !important;
       padding-inline: 0 !important;
+    }
+  }
+
+  .back-to-top {
+    border: 1px solid var(--clr-border);
+    border-radius: 100vmax;
+
+    &:hover {
+      svg {
+        fill: var(--clr-accent);
+      }
     }
   }
 
@@ -38,10 +53,10 @@ $bpHideAside: 900px;
         }
       }
     }
+  }
 
-    svg {
-      fill: var(--clr-font-secondary);
-      transition: 200ms;
-    }
+  svg {
+    fill: var(--clr-font-secondary);
+    transition: 200ms;
   }
 }

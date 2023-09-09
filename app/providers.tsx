@@ -1,6 +1,6 @@
 'use client'
-import Image from 'next/image'
 
+import Image from 'next/image'
 import { NextUIProvider } from '@nextui-org/react'
 
 export function Providers({ children }: { children: React.ReactNode }) {

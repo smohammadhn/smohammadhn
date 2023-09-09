@@ -39,7 +39,7 @@ export default function RootLayout({
     <html lang="en" dir="ltr" className={lato.className + ' dark'}>
       <body>
         <Providers>
-          <div className="root">
+          <div className="root" id="scroller">
             <div className="container">
               <Aside />
 
