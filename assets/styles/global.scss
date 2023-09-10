@@ -1,0 +1,41 @@
+@import '@/assets/styles/reset.css';
+@import '@/assets/styles/variables.scss';
+
+@tailwind base;
+@tailwind utilities;
+// @tailwind components;
+
+html {
+  height: 100vh;
+  height: 100dvh;
+  transition: 500ms;
+}
+
+body {
+  color: var(--clr-font-primary);
+  position: relative;
+  height: 100%;
+
+  & > div {
+    position: relative;
+    height: 100%;
+  }
+}
+
+#main-background-image {
+  object-fit: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+section {
+  &.bottom-spacer {
+    margin-bottom: min(10rem, 33vw);
+  }
+
+  .section__primary-title {
+    font-size: min(3rem, 10vw);
+    line-height: 1.1;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,14 @@
+$bp-layout-shift: 600px;
+
+.projects {
+  &__grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1.5rem;
+    row-gap: 3.5rem;
+
+    @media screen and (max-width: $bp-layout-shift) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
