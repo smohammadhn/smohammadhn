@@ -5,16 +5,8 @@
   max-width: 100%;
   transition: 200ms;
 
-  &:nth-child(3) {
-    border-color: var(--clr-accent);
-  }
-
   &:hover {
     padding-inline: 1.75rem;
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 1rem;
   }
 
   .row1 {
@@ -76,5 +68,15 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
+  }
+}
+
+.expertise__cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  > div:first-child .CardExpertise {
+    border-color: var(--clr-accent);
   }
 }

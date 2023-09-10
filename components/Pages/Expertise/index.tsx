@@ -1,6 +1,7 @@
 import './index.scss'
 import SectionStarterBadge from '@/components/SectionStarterBadge'
 import SkillBadge from '@/components/SkillBadge'
+import Reveal from '@/components/Reveal'
 import { BsHddStack } from 'react-icons/bs'
 import { SiNuxtdotjs, SiNodedotjs, SiNextdotjs } from 'react-icons/si'
 
@@ -74,30 +75,34 @@ export default function Expertise(props: Props) {
         My <span className="font-color-accent">Specializations</span>
       </p>
 
-      {cardsData.map((card) => (
-        <div className="CardExpertise elevate-1" key={card.technology}>
-          <div className="row1">
-            <h3>
-              {card.icon}
-              <span className="accent">{card.technology}</span>
-              <span className="small">development</span>
-            </h3>
-            <p>~ {card.duration}</p>
-          </div>
-          <div className="skills">
-            {card.skills.map((e) => (
-              <SkillBadge text={e} key={e} />
-            ))}
-          </div>
-          <div className="links">
-            {card.links.map((e) => (
-              <a href={e} target="_blank" key={e}>
-                {e}
-              </a>
-            ))}
-          </div>
-        </div>
-      ))}
+      <ul className="expertise__cards">
+        {cardsData.map((card) => (
+          <Reveal key={card.technology}>
+            <div className="CardExpertise">
+              <div className="row1">
+                <h3>
+                  {card.icon}
+                  <span className="accent">{card.technology}</span>
+                  <span className="small">development</span>
+                </h3>
+                <p>~ {card.duration}</p>
+              </div>
+              <div className="skills">
+                {card.skills.map((e) => (
+                  <SkillBadge text={e} key={e} />
+                ))}
+              </div>
+              <div className="links">
+                {card.links.map((e) => (
+                  <a href={e} target="_blank" key={e}>
+                    {e}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+        ))}
+      </ul>
     </section>
   )
 }

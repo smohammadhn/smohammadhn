@@ -3,6 +3,7 @@ import SectionStarterBadge from '@/components/SectionStarterBadge'
 import { LiaSuitcaseSolid } from 'react-icons/lia'
 
 import moment from 'moment'
+import Reveal from '@/components/Reveal'
 
 interface Props {
   bottomSpacer?: boolean
@@ -35,7 +36,10 @@ export default function WorkExperience(props: Props) {
             Sep. 2021 - present (~ {bazarkhodroToPresent} yrs.)
           </div>
 
-          <h3 className="work-exp--title">Lead Front-end Developer</h3>
+          <Reveal>
+            <h3 className="work-exp--title">Lead Front-end Developer</h3>
+          </Reveal>
+
           <p className="work-exp--company font-color-secondary">
             at Bazarkhodro
           </p>
@@ -48,7 +52,10 @@ export default function WorkExperience(props: Props) {
             Jun. 2021 - Sep. 2021 (4 mos.)
           </div>
 
-          <h3 className="work-exp--title">Front-end Developer </h3>
+          <Reveal>
+            <h3 className="work-exp--title">Front-end Developer </h3>
+          </Reveal>
+
           <p className="work-exp--company font-color-secondary">at Ryca</p>
         </div>
 
@@ -59,7 +66,9 @@ export default function WorkExperience(props: Props) {
             Feb 2019 - Jun. 2021 (~ 2.5 yrs.)
           </div>
 
-          <h3 className="work-exp--title">Freelance Front-end Developer</h3>
+          <Reveal>
+            <h3 className="work-exp--title">Freelance Front-end Developer</h3>
+          </Reveal>
           <p className="work-exp--company font-color-secondary">Freelance</p>
         </div>
       </div>
