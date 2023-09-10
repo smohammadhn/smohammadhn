@@ -8,6 +8,7 @@ import { BsHddStack, BsGrid1X2 } from 'react-icons/bs'
 import Link from 'next/link'
 import { Button } from '@nextui-org/button'
 import { useEffect, useState } from 'react'
+import { Tooltip } from '@nextui-org/tooltip'
 
 export default function Aside() {
   const [iconSize, setIconSize] = useState<'md' | 'sm'>('md')
@@ -23,22 +24,27 @@ export default function Aside() {
 
   const navLinks = [
     {
+      title: 'Introduction',
       href: '#section-introduction',
       icon: <AiOutlineHome />,
     },
     {
+      title: 'About',
       href: '#section-about',
       icon: <AiOutlineUser />,
     },
     {
+      title: 'Work Experience',
       href: '#section-work-experience',
       icon: <LiaSuitcaseSolid />,
     },
     {
+      title: 'Expertise',
       href: '#section-expertise',
       icon: <BsHddStack />,
     },
     {
+      title: 'Projects',
       href: '#section-projects',
       icon: <BsGrid1X2 />,
     },
@@ -47,27 +53,49 @@ export default function Aside() {
   return (
     <nav className="navigation">
       <ul>
-        {navLinks.map(({ href, icon }) => (
+        {navLinks.map(({ href, icon, title }) => (
           <li key={href}>
-            <Link href={href}>
-              <Button size={iconSize} radius="full" isIconOnly variant="light">
-                {icon}
-              </Button>
-            </Link>
+            <Tooltip
+              content={title}
+              closeDelay={0}
+              showArrow
+              placement="left"
+              className="tooltip"
+              style={{ height: 'auto' }}
+            >
+              <Link href={href}>
+                <Button
+                  size={iconSize}
+                  radius="full"
+                  isIconOnly
+                  variant="light"
+                >
+                  {icon}
+                </Button>
+              </Link>
+            </Tooltip>
           </li>
         ))}
       </ul>
 
-      <Button
-        className="back-to-top"
-        isIconOnly
-        radius="full"
-        variant="light"
-        onClick={handleScrollToTop}
-        size={iconSize}
+      <Tooltip
+        content="Back to top"
+        closeDelay={0}
+        showArrow
+        className="tooltip"
+        style={{ height: 'auto' }}
       >
-        <AiOutlineArrowUp />
-      </Button>
+        <Button
+          className="back-to-top"
+          isIconOnly
+          radius="full"
+          variant="light"
+          onClick={handleScrollToTop}
+          size={iconSize}
+        >
+          <AiOutlineArrowUp />
+        </Button>
+      </Tooltip>
     </nav>
   )
 }

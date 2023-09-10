@@ -16,7 +16,7 @@ body {
   position: relative;
   height: 100%;
 
-  & > div {
+  > div:first-child {
     position: relative;
     height: 100%;
   }
@@ -38,4 +38,9 @@ section {
     line-height: 1.1;
     margin-bottom: 3rem;
   }
+}
+
+.tooltip {
+  background-color: var(--clr-background);
+  color: var(--clr-accent);
 }

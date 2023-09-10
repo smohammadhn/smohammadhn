@@ -1,16 +1,22 @@
 import './index.scss'
 
+import { Tooltip } from '@nextui-org/tooltip'
 import Link from 'next/link'
 import SectionStarterBadge from '@/components/SectionStarterBadge'
 
 import { AiOutlineHome } from 'react-icons/ai'
 import { BsArrowDownShort } from 'react-icons/bs'
 
+import moment from 'moment'
+
 interface Props {
   bottomSpacer?: boolean
 }
 
 export default function Introduction(props: Props) {
+  const dateMyProgrammingStarted = moment('2019-01-01')
+  const yearDifference = moment().diff(dateMyProgrammingStarted, 'years')
+
   return (
     <section
       id="section-introduction"
@@ -65,7 +71,16 @@ export default function Introduction(props: Props) {
 
       <ul className="introduction__stats">
         <li>
-          <span className="font-color-accent">5+</span>
+          <Tooltip
+            content="Since early 2019"
+            closeDelay={0}
+            showArrow
+            className="tooltip"
+            style={{ height: 'auto' }}
+          >
+            <span className="font-color-accent">{yearDifference}+</span>
+          </Tooltip>
+
           <span className="font-color-secondary">
             YEARS OF
             <br />

@@ -31,10 +31,10 @@ export default function Projects(props: Props) {
       description:
         'A feature-rich website enabling users to buy/sell cars in the country.',
       techStack: [
-        'Vue.js / Nuxt.js / Vuetify.js',
         'SEO',
         'Chart.js',
         'Web Performance',
+        'Vue.js / Nuxt.js / Vuetify.js',
       ],
       website: 'https://bazarkhodro.ir',
       imgName: 'Bazarkhodro.jpg',
@@ -45,10 +45,10 @@ export default function Projects(props: Props) {
       description:
         'An intuitive website for travellers to check out, compare and reserve attraction tickets.',
       techStack: [
-        'Vue.js / Nuxt.js / Vuetify.js',
         '@nuxt/auth',
         '@nuxt/axios',
         'Quill',
+        'Vue.js / Nuxt.js / Vuetify.js',
       ],
       website: 'https://tafrihnet.com',
       imgName: 'tafrihnet.jpg',
@@ -76,9 +76,8 @@ export default function Projects(props: Props) {
         "A multilingual website used to introduce the company's products to their customers from all over the world.",
       techStack: [
         'Vue.js / Nuxt.js / Vuetify.js',
-        'Mongoose',
-        'Data Validation',
-        'Logging & Error Handling',
+        'Internationalization',
+        'SSG',
       ],
       website: 'https://nutricasteel.com',
       imgName: 'NutricaSteel.jpg',
@@ -87,7 +86,7 @@ export default function Projects(props: Props) {
       order: 5,
       title: 'This Website :)',
       description: 'My first React project you are exploring right now!!',
-      techStack: ['React', 'Typescript', 'React-router-dom'],
+      techStack: ['React / Next.js', 'Typescript', 'NextUi', 'React Icons'],
       website: 'https://smohammadhn.com/',
       repository: 'https://github.com/smohammadhn/smohammadhn',
       imgName: 'smohammadhn.jpg',

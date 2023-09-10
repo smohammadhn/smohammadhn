@@ -33,7 +33,7 @@ export default function Expertise(props: Props) {
     {
       technology: 'React.js / Next.js',
       icon: <SiNextdotjs />,
-      duration: '1 Months',
+      duration: '6 Months',
       skills: [
         'Typescript',
         'React-router-dom',
@@ -45,7 +45,7 @@ export default function Expertise(props: Props) {
     {
       technology: 'Node.js / Express.js',
       icon: <SiNodedotjs />,
-      duration: '3 Months',
+      duration: '6 Months',
       skills: [
         'Typescript',
         'MongoDb',

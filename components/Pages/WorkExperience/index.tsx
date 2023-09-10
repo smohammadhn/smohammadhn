@@ -1,13 +1,17 @@
 import './index.scss'
 import SectionStarterBadge from '@/components/SectionStarterBadge'
-import SkillBadge from '@/components/SkillBadge'
 import { LiaSuitcaseSolid } from 'react-icons/lia'
+
+import moment from 'moment'
 
 interface Props {
   bottomSpacer?: boolean
 }
 
 export default function WorkExperience(props: Props) {
+  const BazarkhodroStartDate = moment('2021-09-01')
+  const bazarkhodroToPresent = moment().diff(BazarkhodroStartDate, 'years')
+
   return (
     <section
       id="section-work-experience"
@@ -28,7 +32,7 @@ export default function WorkExperience(props: Props) {
         <div className="work-exp">
           <div className="work-exp--icon" />
           <div className="work-exp--timespan font-color-secondary">
-            Sep. 2021 - present (~2 yrs.)
+            Sep. 2021 - present (~ {bazarkhodroToPresent} yrs.)
           </div>
 
           <h3 className="work-exp--title">Lead Front-end Developer</h3>
@@ -52,7 +56,7 @@ export default function WorkExperience(props: Props) {
         <div className="work-exp">
           <div className="work-exp--icon" />
           <div className="work-exp--timespan font-color-secondary">
-            Feb 2020 - Jun. 2021 (~1.5 yr.)
+            Feb 2019 - Jun. 2021 (~ 2.5 yrs.)
           </div>
 
           <h3 className="work-exp--title">Freelance Front-end Developer</h3>
