@@ -22,7 +22,7 @@ export default function About(props: Props) {
       </p>
 
       <Reveal>
-        <p className="about__subtitle font-color-secondary">
+        <p className="about__subtitle font-color-secondary font-size-tiny">
           Result-oriented full-stack developer with 5+ years of professional
           experience with Vue.js / React.js / Node.js / Typescript and
           frameworks on top, such as Nuxt.js, Next.js and Express.js.

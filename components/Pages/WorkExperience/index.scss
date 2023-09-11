@@ -12,7 +12,6 @@
     }
 
     &--timespan {
-      font-size: 0.9rem;
       transform: translateY(-11px);
     }
 
@@ -40,10 +39,6 @@
       line-height: 1;
       font-size: min(8vw, 2rem);
       font-weight: bold;
-    }
-
-    &--company {
-      font-size: 0.8rem;
     }
   }
 }

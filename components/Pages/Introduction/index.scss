@@ -6,7 +6,6 @@
   }
 
   &__subtitle {
-    font-size: min(0.85rem, 3.5vw);
     margin-bottom: 1rem;
   }
 
@@ -50,11 +49,7 @@
       flex-direction: column;
 
       span:nth-child(1) {
-        font-size: min(6rem, 13vw);
-      }
-
-      span:nth-child(2) {
-        font-size: min(0.85rem, 3.5vw);
+        font-size: min(6rem, 16vw);
       }
     }
   }

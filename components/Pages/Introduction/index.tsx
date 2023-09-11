@@ -34,8 +34,8 @@ export default function Introduction(props: Props) {
         Full-stack Software Developer
       </p>
 
-      <p className="introduction__subtitle font-color-secondary">
-        Give me your design and I&apos;ll transform it into code.
+      <p className="introduction__subtitle font-color-secondary font-size-tiny">
+        Give me your design, I&apos;ll transform it into code.
         <br />
         Just like that! 🫰
       </p>
@@ -81,7 +81,7 @@ export default function Introduction(props: Props) {
             <span className="font-color-accent">{yearDifference}+</span>
           </Tooltip>
 
-          <span className="font-color-secondary">
+          <span className="font-color-secondary font-size-tiny">
             YEARS OF
             <br />
             EXPERIENCE
@@ -90,7 +90,7 @@ export default function Introduction(props: Props) {
 
         <li>
           <span className="font-color-accent">15+</span>
-          <span className="font-color-secondary">
+          <span className="font-color-secondary font-size-tiny">
             PROJECTS COMPLETED
             <br />
             /IN PROGRESS

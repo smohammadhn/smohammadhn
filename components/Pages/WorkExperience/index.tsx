@@ -32,7 +32,7 @@ export default function WorkExperience(props: Props) {
         {/* <!-- bazarkhodro --> */}
         <div className="work-exp">
           <div className="work-exp--icon" />
-          <div className="work-exp--timespan font-color-secondary">
+          <div className="work-exp--timespan font-color-secondary font-size-tiny">
             Sep. 2021 - present (~ {bazarkhodroToPresent} yrs.)
           </div>
 
@@ -40,7 +40,7 @@ export default function WorkExperience(props: Props) {
             <h3 className="work-exp--title">Lead Front-end Developer</h3>
           </Reveal>
 
-          <p className="work-exp--company font-color-secondary">
+          <p className="work-exp--company font-color-secondary font-size-tiny">
             at Bazarkhodro
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function WorkExperience(props: Props) {
         {/* <!-- Ryca --> */}
         <div className="work-exp">
           <div className="work-exp--icon" />
-          <div className="work-exp--timespan font-color-secondary">
+          <div className="work-exp--timespan font-color-secondary font-size-tiny">
             Jun. 2021 - Sep. 2021 (4 mos.)
           </div>
 
@@ -56,20 +56,24 @@ export default function WorkExperience(props: Props) {
             <h3 className="work-exp--title">Front-end Developer </h3>
           </Reveal>
 
-          <p className="work-exp--company font-color-secondary">at Ryca</p>
+          <p className="work-exp--company font-color-secondary font-size-tiny">
+            at Ryca
+          </p>
         </div>
 
         {/* <!-- freelance --> */}
         <div className="work-exp">
           <div className="work-exp--icon" />
-          <div className="work-exp--timespan font-color-secondary">
+          <div className="work-exp--timespan font-color-secondary font-size-tiny">
             Feb 2019 - Jun. 2021 (~ 2.5 yrs.)
           </div>
 
           <Reveal>
             <h3 className="work-exp--title">Freelance Front-end Developer</h3>
           </Reveal>
-          <p className="work-exp--company font-color-secondary">Freelance</p>
+          <p className="work-exp--company font-color-secondary font-size-tiny">
+            Freelance
+          </p>
         </div>
       </div>
     </section>
