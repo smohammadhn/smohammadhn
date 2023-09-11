@@ -16,10 +16,10 @@
     border-radius: 0.85rem;
     overflow: hidden;
     display: block;
+    border: 1px solid var(--clr-background);
 
     &.bordered {
       border: 2px solid var(--clr-accent);
-      border-bottom: none;
     }
 
     img {
