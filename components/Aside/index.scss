@@ -2,11 +2,8 @@ $bpHideAside: 900px;
 
 .aside {
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 100lvh;
   transition: 200ms;
-  position: relative;
-
-  padding: 1rem;
 
   @media screen and (max-width: $bpHideAside) {
     position: fixed;
@@ -35,12 +32,25 @@ $bpHideAside: 900px;
     }
   }
 
+  &--parent {
+    position: sticky;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    display: grid;
+    align-items: center;
+    padding: 1rem;
+  }
+
   &--container {
     height: min(1000px, calc(100dvh - 2rem));
     width: 100%;
-    position: sticky;
-    top: 1rem;
-    left: 0;
+
+    @media screen and (min-width: 2200px) {
+      top: 50%;
+      // transform: translateY(-50%);
+    }
 
     display: flex;
     flex-direction: column;

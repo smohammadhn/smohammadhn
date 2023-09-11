@@ -3,18 +3,15 @@ $bpHideAside: 900px;
 .root {
   height: 100%;
   scroll-behavior: smooth;
+  display: grid;
+  grid-template-columns: 410px 1fr;
+  max-width: 2000px;
+  margin-inline: auto;
+  height: 100%;
+  position: relative;
 
-  .container {
-    display: grid;
-    grid-template-columns: 410px 1fr;
-    max-width: 2000px;
-    margin-inline: auto;
-    height: 100%;
-    position: relative;
-
-    @media screen and (max-width: $bpHideAside) {
-      grid-template-columns: 1fr;
-    }
+  @media screen and (max-width: $bpHideAside) {
+    grid-template-columns: 1fr;
   }
 
   // for each page except landing

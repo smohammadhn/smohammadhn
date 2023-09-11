@@ -42,11 +42,9 @@ export default function RootLayout({
       <body>
         <Providers>
           <div className="root" id="scroller">
-            <div className="container">
-              <Aside />
+            <Aside />
 
-              {children}
-            </div>
+            {children}
           </div>
         </Providers>
 
