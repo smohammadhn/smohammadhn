@@ -27,7 +27,7 @@ const lato = localFont({
 // global metadata
 export const metadata: Metadata = {
   title: 'S.Mohammad Hn. - Portfolio',
-  description: 'Say Hi from Mohammad, FullStack Software Developer',
+  description: 'Say Hi from Mohammad, a full-stack Software Developer',
 }
 
 export default function RootLayout({

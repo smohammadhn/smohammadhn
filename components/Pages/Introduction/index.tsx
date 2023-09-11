@@ -31,7 +31,7 @@ export default function Introduction(props: Props) {
       <p className="introduction__title">
         Say Hi from <span className="font-color-accent">Mohammad</span>,
         <br />
-        FullStack Software Developer
+        Full-stack Software Developer
       </p>
 
       <p className="introduction__subtitle font-color-secondary">

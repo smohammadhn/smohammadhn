@@ -31,7 +31,7 @@ export default function Aside() {
             SMHN
           </Link>
           <span className="aside__heading--role">
-            FullStack Software
+            Full-stack Software
             <br />
             Developer
           </span>
