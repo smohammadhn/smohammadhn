@@ -4,7 +4,7 @@ import './index.scss'
 import Image from 'next/image'
 import { Button } from '@nextui-org/button'
 import { FaTelegramPlane } from 'react-icons/fa'
-import { MdOutlineAlternateEmail } from 'react-icons/md'
+import { MdEmail } from 'react-icons/md'
 import { AiOutlinePhone, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
 import { BiSolidChevronsLeft } from 'react-icons/bi'
 import Link from 'next/link'
@@ -56,8 +56,8 @@ export default function Aside() {
         </div>
 
         <ul className="aside__icons">
-          <a href="mailto:smohammadhnd@gmail.com" target="_blank">
-            <MdOutlineAlternateEmail />
+          <a href="https://t.me/smohammadhn" target="_blank">
+            <FaTelegramPlane />
           </a>
           <a href="tel:+989021211074">
             <AiOutlinePhone />
@@ -70,14 +70,14 @@ export default function Aside() {
           </a>
         </ul>
 
-        <a href="https://t.me/smohammadhn" target="_blank">
+        <a href="mailto:smohammadhnd@gmail.com" target="_blank">
           <Button
             color="success"
             radius="full"
             fullWidth
-            endContent={<FaTelegramPlane />}
+            endContent={<MdEmail />}
           >
-            Let&apos;s chat
+            Email me
           </Button>
         </a>
       </div>

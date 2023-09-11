@@ -1,5 +1,5 @@
-import { ReactNode } from 'react'
 import './index.scss'
+import { ReactNode } from 'react'
 import { Button } from '@nextui-org/button'
 import Link from 'next/link'
 
