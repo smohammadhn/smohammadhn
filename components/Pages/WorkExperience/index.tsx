@@ -13,6 +13,27 @@ export default function WorkExperience(props: Props) {
   const BazarkhodroStartDate = moment('2021-09-01')
   const bazarkhodroToPresent = moment().diff(BazarkhodroStartDate, 'years')
 
+  const workExperienceList = [
+    {
+      slug: 'Bazarkhodro',
+      duration: `Sep. 2021 - present (~ ${bazarkhodroToPresent} yrs.)`,
+      role: 'Lead Front-end Developer',
+      companyName: 'at Bazarkhodro',
+    },
+    {
+      slug: 'Ryca',
+      duration: `Jun. 2021 - Sep. 2021 (4 mos.)`,
+      role: 'Front-end Developer',
+      companyName: 'at Ryca',
+    },
+    {
+      slug: 'Freelance',
+      duration: `Feb 2019 - Jun. 2021 (~ 2.5 yrs.)`,
+      role: 'Freelance Front-end Developer',
+      companyName: 'Freelance',
+    },
+  ]
+
   return (
     <section
       id="section-work-experience"
@@ -29,52 +50,26 @@ export default function WorkExperience(props: Props) {
       </p>
 
       <div className="work-experience-container">
-        {/* <!-- bazarkhodro --> */}
-        <div className="work-exp">
-          <div className="work-exp--icon" />
-          <div className="work-exp--timespan font-color-secondary font-size-tiny">
-            Sep. 2021 - present (~ {bazarkhodroToPresent} yrs.)
+        {workExperienceList.map((item) => (
+          <div className="work-exp" key={item.slug}>
+            <div className="work-exp--icon" />
+            <Reveal>
+              <div className="work-exp--timespan font-color-secondary font-size-tiny">
+                {item.duration}
+              </div>
+            </Reveal>
+
+            <Reveal>
+              <h3 className="work-exp--title">{item.role}</h3>
+            </Reveal>
+
+            <Reveal>
+              <p className="work-exp--company font-color-secondary font-size-tiny">
+                {item.companyName}
+              </p>
+            </Reveal>
           </div>
-
-          <Reveal>
-            <h3 className="work-exp--title">Lead Front-end Developer</h3>
-          </Reveal>
-
-          <p className="work-exp--company font-color-secondary font-size-tiny">
-            at Bazarkhodro
-          </p>
-        </div>
-
-        {/* <!-- Ryca --> */}
-        <div className="work-exp">
-          <div className="work-exp--icon" />
-          <div className="work-exp--timespan font-color-secondary font-size-tiny">
-            Jun. 2021 - Sep. 2021 (4 mos.)
-          </div>
-
-          <Reveal>
-            <h3 className="work-exp--title">Front-end Developer </h3>
-          </Reveal>
-
-          <p className="work-exp--company font-color-secondary font-size-tiny">
-            at Ryca
-          </p>
-        </div>
-
-        {/* <!-- freelance --> */}
-        <div className="work-exp">
-          <div className="work-exp--icon" />
-          <div className="work-exp--timespan font-color-secondary font-size-tiny">
-            Feb 2019 - Jun. 2021 (~ 2.5 yrs.)
-          </div>
-
-          <Reveal>
-            <h3 className="work-exp--title">Freelance Front-end Developer</h3>
-          </Reveal>
-          <p className="work-exp--company font-color-secondary font-size-tiny">
-            Freelance
-          </p>
-        </div>
+        ))}
       </div>
     </section>
   )
