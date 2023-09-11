@@ -76,26 +76,29 @@ export default function Aside() {
             </Tooltip>
           </li>
         ))}
-      </ul>
 
-      <Tooltip
-        content="Back to top"
-        closeDelay={0}
-        showArrow
-        className="tooltip"
-        style={{ height: 'auto' }}
-      >
-        <Button
-          className="back-to-top"
-          isIconOnly
-          radius="full"
-          variant="light"
-          onClick={handleScrollToTop}
-          size={iconSize}
-        >
-          <AiOutlineArrowUp />
-        </Button>
-      </Tooltip>
+        <li>
+          <Tooltip
+            content="Back to top"
+            closeDelay={0}
+            showArrow
+            className="tooltip"
+            style={{ height: 'auto' }}
+            placement="left"
+          >
+            <Button
+              className="back-to-top"
+              isIconOnly
+              radius="full"
+              variant="light"
+              onClick={handleScrollToTop}
+              size={iconSize}
+            >
+              <AiOutlineArrowUp />
+            </Button>
+          </Tooltip>
+        </li>
+      </ul>
     </nav>
   )
 }

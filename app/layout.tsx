@@ -5,8 +5,10 @@ import type { Metadata } from 'next'
 import { Providers } from './providers'
 
 import localFont from 'next/font/local'
+import Image from 'next/image'
 
 import Aside from '@/components/Aside'
+
 // global fonts
 const lato = localFont({
   src: [
@@ -47,6 +49,15 @@ export default function RootLayout({
             </div>
           </div>
         </Providers>
+
+        {/* background image */}
+        <Image
+          id="main-background-image"
+          src={'/main-background.jpeg'}
+          alt="Background image"
+          fill
+          sizes="100vw"
+        />
       </body>
     </html>
   )

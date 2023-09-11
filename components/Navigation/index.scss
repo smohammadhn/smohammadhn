@@ -2,14 +2,13 @@ $bpHideAside: 900px;
 
 .navigation {
   display: grid;
-  place-items: center;
   grid-template-rows: 1fr auto;
+  justify-content: center;
   padding-bottom: 3rem;
 
-  height: 100vh;
-  height: 100lvh;
-  position: sticky;
-  top: 0;
+  position: relative;
+  min-height: 100vh;
+  min-height: 100lvh;
   transition: 400ms;
 
   @media screen and (max-width: $bpHideAside) {
@@ -45,6 +44,11 @@ $bpHideAside: 900px;
     display: flex;
     flex-direction: column;
     row-gap: 0.25rem;
+    position: sticky;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: fit-content;
 
     li {
       &:hover {
