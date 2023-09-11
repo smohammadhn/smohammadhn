@@ -6,29 +6,15 @@ import { Button } from '@nextui-org/button'
 import { FaTelegramPlane } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { AiOutlinePhone, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
-import { BiSolidChevronsLeft } from 'react-icons/bi'
 import Link from 'next/link'
-import { useState } from 'react'
 
 export default function Aside() {
-  const [classNameAside, setClassNameAside] = useState('aside invisiblee')
-
-  const toggleAsideVisbility = () => {
-    console.log('reached hre')
-    if (classNameAside.includes('invisiblee')) setClassNameAside('aside')
-    else setClassNameAside('aside invisiblee')
-  }
-
   return (
-    <aside className={classNameAside}>
+    <aside className="aside">
       <div className="aside--parent">
         <div className="aside--container">
           <div className="aside__heading">
-            <Link
-              href="/"
-              className="aside__heading--logo"
-              onClick={toggleAsideVisbility}
-            >
+            <Link href="/" className="aside__heading--logo">
               SMHN
             </Link>
             <span className="aside__heading--role">
@@ -83,18 +69,6 @@ export default function Aside() {
           </a>
         </div>
       </div>
-
-      {/* <div className="aside--toggler">
-        <Button
-          isIconOnly
-          radius="full"
-          variant="light"
-          onClick={toggleAsideVisbility}
-          size="sm"
-        >
-          <BiSolidChevronsLeft />
-        </Button>
-      </div> */}
     </aside>
   )
 }

@@ -5,33 +5,6 @@ $bpHideAside: 900px;
   min-height: 100lvh;
   transition: 200ms;
 
-  @media screen and (max-width: $bpHideAside) {
-    position: fixed;
-    right: 0;
-    left: auto;
-    width: 100vw;
-    z-index: 20;
-    background-color: var(--clr-background);
-
-    &--toggler {
-      display: block !important;
-
-      button {
-        transform: rotate(180deg);
-      }
-    }
-
-    &.invisiblee {
-      right: -100%;
-
-      .aside--toggler {
-        button {
-          transform: rotate(0);
-        }
-      }
-    }
-  }
-
   &--parent {
     position: sticky;
     inset: 0;
@@ -134,15 +107,15 @@ $bpHideAside: 900px;
     }
   }
 
-  &--toggler {
-    background-color: var(--clr-background);
-    border: 1px solid var(--clr-border);
-    border-inline-end: none !important;
-    border-radius: 1rem 0 0 1rem !important;
-    position: fixed !important;
-    top: 2rem;
-    right: 0;
-    z-index: 100 !important;
-    display: none;
+  @media screen and (max-width: $bpHideAside) {
+    min-height: fit-content;
+
+    &--parent {
+      height: fit-content;
+    }
+
+    &--container {
+      height: fit-content;
+    }
   }
 }
