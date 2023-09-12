@@ -9,20 +9,9 @@ $bpHideAside: 900px;
   display: grid;
   justify-content: center;
 
-  // @media screen and (max-width: $bpHideAside) {
-  //   position: fixed;
-  //   z-index: 2;
-  //   right: 0;
-  //   left: initial;
-
-  //   ul,
-  //   .back-to-top {
-  //     background-color: var(--clr-background);
-  //     border-inline-end: none !important;
-  //     border-radius: 1rem 0 0 1rem !important;
-  //     padding-inline: 0 !important;
-  //   }
-  // }
+  @media screen and (max-width: $bpHideAside) {
+    display: none;
+  }
 
   .back-to-top {
     border: 1px solid var(--clr-border);

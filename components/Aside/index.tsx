@@ -36,12 +36,20 @@ export default function Aside() {
     setAsideParentStyles(result)
   })
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <aside className="aside">
       <div className="aside--parent" style={asideParentStyles}>
         <div className="aside--container">
           <div className="aside__heading">
-            <Link href="/" className="aside__heading--logo">
+            <Link
+              href="/"
+              className="aside__heading--logo"
+              onClick={scrollToTop}
+            >
               SMHN
             </Link>
             <span className="aside__heading--role">
@@ -56,6 +64,7 @@ export default function Aside() {
               alt="avatar"
               width={50}
               height={50}
+              onClick={scrollToTop}
             />
           </div>
 
