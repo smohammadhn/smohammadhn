@@ -25,6 +25,7 @@ $bpHideAside: 900px;
 
   &--container {
     width: 100%;
+    height: min(900px, 100%);
     overflow: hidden;
 
     display: flex;
