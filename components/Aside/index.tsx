@@ -21,7 +21,7 @@ export default function Aside() {
     if (window.innerWidth > 900) return
 
     let scrollPosition = 1 - latest / 300
-    if (scrollPosition < 0.2) scrollPosition = 0.17
+    if (scrollPosition < 0.2) scrollPosition = 0.21
 
     const result: interfaceAsideParentStyles = {
       gridTemplateRows: scrollPosition.toFixed(2) + 'fr',
@@ -29,7 +29,8 @@ export default function Aside() {
 
     if (scrollPosition < 0.5) {
       result.backgroundColor = 'var(--clr-background)'
-      result.padding = (scrollPosition * 3.75).toFixed(2) + 'rem'
+      result.paddingBlock = (scrollPosition * 2).toFixed(2) + 'rem'
+      result.paddingInline = (scrollPosition * 4).toFixed(2) + 'rem'
     }
 
     setAsideParentStyles(result)

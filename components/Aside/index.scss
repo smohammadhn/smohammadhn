@@ -18,7 +18,8 @@ $bpHideAside: 900px;
     border: 1px solid var(--clr-border);
     border-radius: 1.25rem;
     overflow: hidden;
-    padding: 2rem;
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
     transition: 200ms;
   }
 
@@ -123,9 +124,11 @@ $bpHideAside: 900px;
 
     &--container {
       height: fit-content;
+      row-gap: 1rem;
     }
 
     &__heading {
+      margin-bottom: 0;
       &--role {
         display: none;
       }

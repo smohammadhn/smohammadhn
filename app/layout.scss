@@ -12,7 +12,7 @@ $bpHideAside: 900px;
 
   @media screen and (max-width: $bpHideAside) {
     grid-template-columns: 1fr;
-    padding-top: 23rem;
+    padding-top: 18rem;
   }
 
   // for each page except landing
