@@ -7,19 +7,11 @@ import { LiaSuitcaseSolid } from 'react-icons/lia'
 import { BsHddStack, BsGrid1X2 } from 'react-icons/bs'
 import Link from 'next/link'
 import { Button } from '@nextui-org/button'
-import { useEffect, useState } from 'react'
 import { Tooltip } from '@nextui-org/tooltip'
 
 export default function Aside() {
-  const [iconSize, setIconSize] = useState<'md' | 'sm'>('md')
-
-  useEffect(() => {
-    if (window.innerWidth < 900) setIconSize('sm')
-  }, [])
-
   const handleScrollToTop = () => {
-    const scrollerContainer = document.getElementById('scroller')
-    if (scrollerContainer) scrollerContainer.scrollTo(0, 0)
+    window.scrollTo(0, 0)
   }
 
   const navLinks = [
@@ -64,12 +56,7 @@ export default function Aside() {
               style={{ height: 'auto' }}
             >
               <Link href={href}>
-                <Button
-                  size={iconSize}
-                  radius="full"
-                  isIconOnly
-                  variant="light"
-                >
+                <Button size="md" radius="full" isIconOnly variant="light">
                   {icon}
                 </Button>
               </Link>
@@ -92,7 +79,7 @@ export default function Aside() {
               radius="full"
               variant="light"
               onClick={handleScrollToTop}
-              size={iconSize}
+              size="md"
             >
               <AiOutlineArrowUp />
             </Button>

@@ -7,11 +7,37 @@ import { FaTelegramPlane } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { AiOutlinePhone, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
 import Link from 'next/link'
+import { useMotionValueEvent, useScroll } from 'framer-motion'
+import { CSSProperties, useState } from 'react'
+
+interface interfaceAsideParentStyles extends CSSProperties {}
 
 export default function Aside() {
+  const { scrollY } = useScroll()
+  const [asideParentStyles, setAsideParentStyles] =
+    useState<interfaceAsideParentStyles>({})
+
+  useMotionValueEvent(scrollY, 'change', (latest: number) => {
+    if (window.innerWidth > 900) return
+
+    let scrollPosition = 1 - latest / 300
+    if (scrollPosition < 0.2) scrollPosition = 0.17
+
+    const result: interfaceAsideParentStyles = {
+      gridTemplateRows: scrollPosition.toFixed(2) + 'fr',
+    }
+
+    if (scrollPosition < 0.5) {
+      result.backgroundColor = 'var(--clr-background)'
+      result.padding = (scrollPosition * 3.75).toFixed(2) + 'rem'
+    }
+
+    setAsideParentStyles(result)
+  })
+
   return (
     <aside className="aside">
-      <div className="aside--parent">
+      <div className="aside--parent" style={asideParentStyles}>
         <div className="aside--container">
           <div className="aside__heading">
             <Link href="/" className="aside__heading--logo">
@@ -22,12 +48,20 @@ export default function Aside() {
               <br />
               Developer
             </span>
+
+            <Image
+              className="aside__heading--avatar"
+              src={'/profile-square@500px.jpg'}
+              alt="avatar"
+              width={50}
+              height={50}
+            />
           </div>
 
           <Image
             className="aside__avatar"
             src={'/profile-square@500px.jpg'}
-            alt="Picture of the author"
+            alt="avatar"
             width={500}
             height={500}
           />
