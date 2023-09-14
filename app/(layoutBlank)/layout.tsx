@@ -2,8 +2,6 @@ import 'assets/styles/global.scss'
 
 import type { Metadata } from 'next'
 
-import Image from 'next/image'
-
 // global metadata
 export const metadata: Metadata = {
   title: 'S.Mohammad Hn. - Portfolio',
