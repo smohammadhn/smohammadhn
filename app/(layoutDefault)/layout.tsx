@@ -13,12 +13,12 @@ import Aside from '@/components/Aside'
 const lato = localFont({
   src: [
     {
-      path: '../assets/fonts/Lato/Lato-Bold.ttf',
+      path: '../../assets/fonts/Lato/Lato-Bold.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../assets/fonts/Lato/Lato-Black.ttf',
+      path: '../../assets/fonts/Lato/Lato-Black.ttf',
       weight: '700',
       style: 'normal',
     },
