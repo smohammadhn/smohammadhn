@@ -1,0 +1,11 @@
+Model Information:
+* title:	Falling Leaves
+* source:	https://sketchfab.com/3d-models/falling-leaves-d552ce56772b4ad7815ac5957bd5e104
+* author:	DogexorRexUwU (https://sketchfab.com/oscar.lopez.riviello)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Falling Leaves" (https://sketchfab.com/3d-models/falling-leaves-d552ce56772b4ad7815ac5957bd5e104) by DogexorRexUwU (https://sketchfab.com/oscar.lopez.riviello) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
