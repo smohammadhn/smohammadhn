@@ -8,8 +8,8 @@ Source: https://sketchfab.com/3d-models/falling-leaves-d552ce56772b4ad7815ac5957
 Title: Falling Leaves
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useEffect, useRef } from 'react'
+import { useAnimations, useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
 import { useFrame } from '@react-three/fiber'
 
@@ -19,16 +19,12 @@ export function Model(props) {
     '/models/autumn-leaves/model.gltf'
   )
 
-  // Here's the animation part
-  let mixer = new THREE.AnimationMixer(scene)
-  animations.forEach((clip) => {
-    const action = mixer.clipAction(clip)
-    action.timeScale = 0.3
-    action.play()
-  })
+  const animation = useAnimations(animations, group)
 
-  useFrame((_, delta) => {
-    mixer?.update(delta)
+  useEffect(() => {
+    const action = animation.actions.idle
+    action.timeScale = 0.2
+    action.play()
   })
 
   return (
