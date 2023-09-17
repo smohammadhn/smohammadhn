@@ -12,3 +12,11 @@ $bpHideAside: 900px;
     padding-inline-end: min(1rem, 5vw);
   }
 }
+
+.my-canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  z-index: -1;
+}
