@@ -1,0 +1,8 @@
+---
+description: Project standards for how to work in this repo
+alwaysApply: true
+---
+
+# Project standards
+
+- Do not browser-test changes unless the user explicitly asks for it.

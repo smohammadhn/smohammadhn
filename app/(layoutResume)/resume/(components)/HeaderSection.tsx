@@ -1,0 +1,25 @@
+import { contacts } from '../utils/constants'
+
+export default function HeaderSection() {
+  return (
+    <header id="resume-header" className="resume-header">
+      <h1 className="resume-header__name">
+        <span className="resume-header__first-name">Mohammad</span>
+        <span className="resume-header__last-name">Hosseininejad</span>
+      </h1>
+
+      <p className="resume-header__title">Senior Full-Stack Engineer</p>
+
+      <ul className="resume-header__contacts">
+        {contacts.map((contact) => (
+          <li key={contact.label}>
+            <a href={contact.href} target="_blank">
+              {contact.label}
+            </a>
+          </li>
+        ))}
+        <li>Remote</li>
+      </ul>
+    </header>
+  )
+}
