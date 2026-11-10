@@ -14,7 +14,7 @@ export interface ExperienceItem {
   company: string
   role?: string
   siteUrl?: string
-  engagement: string
+  engagement?: string
   period: string
   summary?: string
   highlights?: string[]

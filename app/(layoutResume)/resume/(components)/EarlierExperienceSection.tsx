@@ -1,6 +1,6 @@
 import SectionHeading from './SectionHeading'
 import ExperienceEntry from './ExperienceEntry'
-import { earlierExperience } from '../utils/constants'
+import { earlierExperience, earlierExperienceNote } from '../utils/constants'
 
 export default function EarlierExperienceSection() {
   return (
@@ -9,6 +9,7 @@ export default function EarlierExperienceSection() {
       {earlierExperience.map((item) => (
         <ExperienceEntry item={item} key={item.company} />
       ))}
+      <p className="resume-earlier__note">{earlierExperienceNote}</p>
     </section>
   )
 }

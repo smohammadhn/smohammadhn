@@ -26,10 +26,10 @@ export const skillGroups: SkillGroup[] = [
   {
     label: 'Frontend Engineering',
     highlights: [
-      'Complex motion-driven interfaces combining GSAP, Framer Motion, and Three.js.',
-      'Long-running kiosk applications engineered for stable memory and CPU usage.',
+      'Motion-driven interfaces and 3D experiences using GSAP, Framer Motion, and Three.js.',
+      'Long-running kiosk applications optimized for memory, CPU, and sustained performance.',
+      'Responsive, accessible experiences across mobile, desktop, and large-format displays, backed by browser automation and regression testing.',
     ],
-    note: 'Responsive across mobile, desktop, and large-format displays, built with WCAG in mind and covered by browser automation and regression testing.',
     stack: [
       'React/Next.js',
       'TypeScript',
@@ -39,26 +39,27 @@ export const skillGroups: SkillGroup[] = [
       'Drei',
       'Tailwind CSS',
       'Playwright',
+      'WebGL',
     ],
   },
   {
     label: 'Backend \n& Systems',
     highlights: [
-      'Modular production APIs with real-time, event-driven features, backed by relational schema design, query optimization, authentication, and third-party integrations.',
+      'Production APIs and real-time systems with relational database design, query optimization, authentication, and third-party integrations.',
     ],
     stack: [
       'Node.js',
       'NestJS',
       'Prisma',
-      'MySQL/PostgreSQL/MariaDb',
+      'MySQL/PostgreSQL',
       'Supabase',
-      'Websockets/Socket.IO',
+      'WebSockets/Socket.IO',
     ],
   },
   {
     label: 'Infrastructure \n& Production',
     highlights: [
-      'Containerized multi-service production, provisioned as code and run behind reverse-proxy routing, SSL, and observability.',
+      'Containerized deployments, infrastructure automation, reverse-proxy routing, SSL, and production observability.',
     ],
     stack: [
       'AWS/Azure/Cloudflare',
@@ -72,7 +73,7 @@ export const skillGroups: SkillGroup[] = [
   {
     label: 'AI \nEngineering',
     highlights: [
-      'RAG systems connected to domain-specific knowledge, through multi-stage LLM processing, document preprocessing, and semantic retrieval.',
+      'Multi-stage LLM pipelines, document processing, RAG architectures, and semantic retrieval over domain-specific knowledge.',
     ],
     stack: [
       'OpenAI',
@@ -97,10 +98,8 @@ export const experience: ExperienceItem[] = [
     period: '2023 — Present',
     highlights: [
       'Contributed to 20+ digital projects for internationally recognized clients, including TD Bank, CBC, Mercedes-Benz, Meta, and Missing Pieces.',
-      'Trusted with lead engineering responsibilities across frontend, backend, and DevOps, frequently taking ownership of entire application layers based on project requirements.',
-      'Delivered complete websites and interactive digital experiences under exceptionally tight deadlines, sometimes turning around entire projects in under two weeks.',
-      'Engineered performance-sensitive kiosk applications, focusing on asset preloading, memory and heap management, leak detection, and sustained performance across extended sessions.',
-      'Owned end-to-end quality and release readiness through Playwright automation, accessibility and security audit requirements, analytics instrumentation, and production testing.',
+      'Led engineering across frontend, backend, and DevOps, frequently owning entire application layers and delivering complete experiences under tight deadlines, sometimes in under two weeks.',
+      'Engineered performance-sensitive kiosk applications and owned release readiness, covering memory optimization, asset preloading, leak detection, Playwright automation, accessibility, security audits, and production testing.',
     ],
   },
   {
@@ -109,15 +108,9 @@ export const experience: ExperienceItem[] = [
     engagement: 'Independent Contractor · Canada · Remote',
     period: '2023 — Present',
     highlights: [
-      'Designed and developed a multi-stage AI processing engine combining document analysis, preprocessing, Pinecone-powered semantic retrieval, and dynamically constructed LLM prompts.',
-
-      'Implemented a multi-step LLM orchestration pipeline with deterministic post-processing, Azure Functions execution, and end-to-end streaming through backend services to the frontend.',
-
-      'Built a highly customized rich-text editor using Lexical, implementing an extensive collection of custom nodes including pricing tables, payment components, buttons, and other structured content elements.',
-
-      'Led a comprehensive overhaul of the existing platform, rebuilding its interface and application experience around a new product design.',
-
-      'Integrated Supabase-backed data infrastructure and Stripe payments, maintaining existing data integrity throughout the platform transition.',
+      'Designed a multi-stage AI processing engine combining document analysis, preprocessing, Pinecone semantic retrieval, and dynamically constructed LLM prompts.',
+      'Implemented an LLM orchestration pipeline with deterministic post-processing, Azure Functions execution, and end-to-end streaming across backend and frontend services.',
+      'Rebuilt the platform around a new product design, developing a customized Lexical editor with structured content nodes and integrating Supabase infrastructure and Stripe payments while preserving existing data integrity.',
     ],
   },
 ]
@@ -134,7 +127,7 @@ export const projects: ProjectItem[] = [
     githubRepoURL:
       'https://github.com/reflektor-digital-inc/cbc-olympics-winter-2026',
     summary:
-      'One of my most challenging projects, over 5000 concurrent users all playing a live game at the same time. So much synchronization and precise job scheduling. I was the Solo backend developer and Devops engineer for this project.',
+      'One of my most challenging projects: a live multiplayer game with 5,000+ concurrent users. I was the sole backend developer and DevOps engineer, responsible for real-time synchronization and precise job scheduling.',
     visible: true,
   },
   {
@@ -143,16 +136,16 @@ export const projects: ProjectItem[] = [
     commitCount: 246,
     githubRepoURL: 'https://github.com/reflektor-digital-inc/td-barbie-game',
     summary:
-      'Undergoing huge accessibility audit and PEN-testing, I was involved in three projects for TD Bank of Canada. The most recent one called "Talk Money Challenge" is a puzzle style game. I was Lead Backend Developer for the Talk Money Challenge 2026 and the Frontend developer of the other two.',
+      'Worked across three TD Bank projects, all undergoing extensive accessibility audits and penetration testing. I led backend development for Talk Money Challenge, a puzzle-style game, and handled frontend development for the other two.',
     visible: true,
   },
   {
-    name: "Cobrief's SASS Platform & Website",
+    name: "Cobrief's SaaS Platform & Website",
     period: 'Winter — Fall 2026',
     commitCount: 827,
     githubRepoURL: 'https://github.com/cobriefhq/cobrief-platform',
     summary:
-      'Created a full AI engine to parse documents and review for risks, Overhauled the entire platform and website UI according to their provided new design.',
+      'Built an AI engine that analyzes documents and identifies potential risks. Also overhauled the entire platform and website to match their new product design.',
     visible: true,
   },
   {
@@ -161,7 +154,7 @@ export const projects: ProjectItem[] = [
     commitCount: 105,
     githubRepoURL: 'https://github.com/reflektor-digital-inc/f1ace',
     summary:
-      'Las Vegas and Austin, hosted a physical pitwall to drag the user in the shoes of a Formula 1 manager, 10 Monitors, 5 tablets, over 3000+ runs, kiosk mode tabs constantly running for 9 hours. Significant memory and heap testing plus smartest asset preloading to eliminate lag.',
+      'Helped bring a Formula 1 pitwall experience to life in Las Vegas and Austin, with 10 monitors and 5 tablets. The kiosks handled 3,000+ runs and stayed active for 9-hour sessions, requiring extensive memory testing and careful asset preloading to keep everything running smoothly.',
     visible: true,
   },
   {
@@ -171,7 +164,7 @@ export const projects: ProjectItem[] = [
     githubRepoURL:
       'https://github.com/reflektor-digital-inc/saputo-armstrong-cheesegpt',
     summary:
-      'A ChatGpt with a PHD in Cheese, we implemented Azure Vector Search, admin panel, react-based widget for their official Website. Lead Frontend and part backend developer on this one.',
+      'A ChatGPT with a PhD in cheese. We built an AI chatbot using Azure AI Search, along with an admin panel and a React-based widget for Armstrong’s official website. I led frontend development and contributed to the backend.',
     visible: true,
   },
   {
@@ -181,7 +174,7 @@ export const projects: ProjectItem[] = [
     githubRepoURL:
       'https://github.com/reflektor-digital-inc/be-the-people-music',
     summary:
-      'Another private event in New York, For DJs and Music producers to see their AI-generated music and artworks based on their answers to certain questions. First time using Convex for real-time data syncing. Hardware aside, I was in charge of all the backend and half of kiosk views.',
+      'An interactive event in New York where DJs and music producers explored AI-generated music and artwork based on their answers to a series of questions. I handled the backend and roughly half of the kiosk interfaces, using Convex for real-time data synchronization.',
     visible: true,
   },
   {
@@ -190,17 +183,17 @@ export const projects: ProjectItem[] = [
     commitCount: 118,
     githubRepoURL: 'https://github.com/reflektor-digital-inc/candy-crush-proto',
     summary:
-      "The world's first playable live-action music video. Swipe, match, and drive Thundercat's cinematic narrative in real time. So much frontend work, I was in their frontend team of 5.",
+      "The world's first playable live-action music video. Players swipe, match, and interact with Thundercat's cinematic narrative in real time. I was part of a five-person frontend team.",
     visible: true,
   },
   {
-    name: 'True Hockey - Game On Ball',
+    name: 'TRUE Hockey - Game On Ball',
     period: 'Spring 2026',
     commitCount: 66,
     githubRepoURL:
       'https://github.com/reflektor-digital-inc/game-on-true-hockey',
     summary:
-      'The Game On Ball by TRUE Hockey is a tech-enabled street hockey ball designed to combat "rat-running". Website includes heavy GSAP animations and parallax effects.',
+      'Built the website for TRUE Hockey’s tech-enabled street hockey ball, designed to combat rat-running. The site features heavy GSAP animations and parallax effects.',
     visible: true,
   },
   {
@@ -210,7 +203,7 @@ export const projects: ProjectItem[] = [
     githubRepoURL:
       'https://github.com/reflektor-digital-inc/following-wildfire-admin-panel',
     summary:
-      'They showed me the website, asked me to make an admin panel for them with no figma design or references of any kind. Their panel was ready in under 2 weeks. The whole website ended up winning multiple awards. ',
+      'They showed me the website and asked me to build an admin panel. No Figma file, no design references, just the website. I figured it out and delivered the panel in under two weeks. The website went on to win multiple awards.',
     visible: true,
   },
 
@@ -286,7 +279,7 @@ export const projects: ProjectItem[] = [
     githubRepoURL:
       'https://github.com/reflektor-digital-inc/td-aeroplan-contest-panel',
     summary:
-      'Admin portal for the TD Aeroplan 10 year anniversary contest. Next.js and TypeScript.',
+      'Admin portal for the TD Aeroplan 10-year anniversary contest, built with Next.js and TypeScript.',
     visible: false,
   },
   {
@@ -327,7 +320,6 @@ export const projects: ProjectItem[] = [
     summary: 'The one with the rounded text and one pager.',
     visible: false,
   },
-
   {
     name: 'Bazarkhodro Website',
     visible: false,
@@ -354,28 +346,18 @@ export const earlierExperience: ExperienceItem[] = [
   {
     company: 'Bazarkhodro',
     role: 'Lead Front-end Developer',
-    engagement: 'Remote',
     period: 'Sep 2021 — Feb 2023',
-    highlights: [
-      'Led front-end development of bazarkhodro.ir, a car marketplace for buying and selling vehicles, with a focus on SEO and web performance.',
-      'Built rentifa.com, a bilingual car rental platform serving the domestic market and neighboring countries.',
-    ],
+    summary:
+      'Led the front end of bazarkhodro.ir and built rentifa.com, a bilingual car rental platform.',
   },
   {
     company: 'Ryca & freelance clients',
     role: 'Front-end Developer',
-    engagement: 'Remote',
     period: 'Feb 2019 — Sep 2021',
-    summary:
-      'Delivered websites and admin panels for a range of clients with Vue, Nuxt and React.',
+    summary: 'Websites and admin panels for clients, in Vue, Nuxt and React.',
   },
 ]
 
-// ---------------------------------------------------------------------------
-// Did you know (short personal facts, closes page two)
-// ---------------------------------------------------------------------------
-
-export const didYouKnow: string[] = [
-  'Fluent in English, with three years of daily collaboration with Canadian and UK teams.',
-  'Worked with engineers and stakeholders from Canada, the US, the UK, India, Japan and Türkiye.',
-]
+// One line under earlier experience, in place of the Did You Know list
+export const earlierExperienceNote =
+  'Languages: English (Fluent) · 3 years of daily collaboration with Canadian and UK teams.'

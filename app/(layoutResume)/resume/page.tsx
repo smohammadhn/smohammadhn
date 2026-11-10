@@ -6,14 +6,13 @@ import ExpertiseSection from './(components)/ExpertiseSection'
 import ExperienceSection from './(components)/ExperienceSection'
 import SelectedProjectsSection from './(components)/SelectedProjectsSection'
 import EarlierExperienceSection from './(components)/EarlierExperienceSection'
-import DidYouKnowSection from './(components)/DidYouKnowSection'
 
 // Page composition: reorder, move or remove sections here
 export default function ResumePage() {
   return (
     <main className="resume">
       {/* Page 1: everything a recruiter needs in a quick scan */}
-      <div className="resume__page">
+      <div className="resume__page resume__page--spread">
         {/* Name, title and contact links */}
         <HeaderSection />
 
@@ -28,15 +27,12 @@ export default function ResumePage() {
       </div>
 
       {/* Page 2: optional depth for interested readers */}
-      <div className="resume__page">
+      <div className="resume__page resume__page--spread">
         {/* Projects, selected and the rest, under one heading */}
         <SelectedProjectsSection />
 
-        {/* Pre-2023 roles, kept compact */}
+        {/* Pre-2023 roles, kept compact, with a languages line */}
         <EarlierExperienceSection />
-
-        {/* Short personal facts as a closing note */}
-        <DidYouKnowSection />
       </div>
     </main>
   )
