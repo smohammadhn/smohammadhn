@@ -22,16 +22,14 @@ export const contacts: ContactItem[] = [
 // Technical expertise
 // ---------------------------------------------------------------------------
 
-export const skillGroups = [
+export const skillGroups: SkillGroup[] = [
   {
     label: 'Frontend Engineering',
     highlights: [
       'Complex motion-driven interfaces combining GSAP, Framer Motion, and Three.js.',
       'Long-running kiosk applications engineered for stable memory and CPU usage.',
-      'Responsive experiences across mobile, desktop, and large-format displays.',
-      'Accessible interfaces built with WCAG guidelines in mind.',
-      'Browser automation, interaction testing, and regression testing.',
     ],
+    note: 'Responsive across mobile, desktop, and large-format displays, built with WCAG in mind and covered by browser automation and regression testing.',
     stack: [
       'React/Next.js',
       'TypeScript',
@@ -46,10 +44,7 @@ export const skillGroups = [
   {
     label: 'Backend \n& Systems',
     highlights: [
-      'Modular backend architecture and production API development.',
-      'Real-time communication and event-driven application features.',
-      'Relational database design, schema modeling, and query optimization.',
-      'Authentication, authorization, and third-party service integrations.',
+      'Modular production APIs with real-time, event-driven features, backed by relational schema design, query optimization, authentication, and third-party integrations.',
     ],
     stack: [
       'Node.js',
@@ -63,10 +58,7 @@ export const skillGroups = [
   {
     label: 'Infrastructure \n& Production',
     highlights: [
-      'Containerized deployments and multi-service production environments.',
-      'Cloud infrastructure provisioning and infrastructure as code.',
-      'Reverse proxy configuration, traffic routing, and SSL management.',
-      'Infrastructure monitoring, observability, and production troubleshooting.',
+      'Containerized multi-service production, provisioned as code and run behind reverse-proxy routing, SSL, and observability.',
     ],
     stack: [
       'AWS/Azure/Cloudflare',
@@ -80,9 +72,7 @@ export const skillGroups = [
   {
     label: 'AI \nEngineering',
     highlights: [
-      'RAG systems connected to domain-specific knowledge.',
-      'Multi-stage LLM processing and document preprocessing pipelines.',
-      'Semantic retrieval and vector-based knowledge search.',
+      'RAG systems connected to domain-specific knowledge, through multi-stage LLM processing, document preprocessing, and semantic retrieval.',
     ],
     stack: [
       'OpenAI',
@@ -93,7 +83,7 @@ export const skillGroups = [
       'Prompt Engineering',
     ],
   },
-] as const
+]
 
 // ---------------------------------------------------------------------------
 // Experience (current, Canadian engagements)
@@ -102,7 +92,7 @@ export const skillGroups = [
 export const experience: ExperienceItem[] = [
   {
     company: 'Lorem Ipsum Inc.',
-    role: 'Senior Full-Stack Engineer',
+    siteUrl: 'https://loremipsum.com',
     engagement: 'Independent Contractor · Canada · Remote',
     period: '2023 — Present',
     highlights: [
@@ -113,7 +103,7 @@ export const experience: ExperienceItem[] = [
   },
   {
     company: 'Dolor Sit Technologies',
-    role: 'Full-Stack Engineer',
+    siteUrl: 'https://dolorsit.com',
     engagement: 'Independent Contractor · Canada · Remote',
     period: '2023 — Present',
     highlights: [

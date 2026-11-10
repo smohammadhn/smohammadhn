@@ -114,7 +114,7 @@
 // ---------------------------------------------------------------------------
 
 .resume-profile__text {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -126,7 +126,7 @@
 .resume-expertise {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 3.5mm;
 }
 
 .resume-expertise__row {
@@ -137,30 +137,33 @@
 
 .resume-expertise__label {
   font-weight: 700;
+  line-height: 1.35;
   white-space: pre-line;
 }
 
 .resume-expertise__body {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.3rem;
 }
 
-.resume-expertise__highlights {
-  padding-left: 1.1rem;
-  list-style: disc;
+.resume-expertise__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
 
-  li + li {
-    margin-top: 0.1rem;
-  }
+.resume-expertise__highlight {
+  line-height: 1.4;
+}
 
-  li::marker {
-    color: var(--clr-accent);
-  }
+.resume-expertise__note {
+  line-height: 1.4;
 }
 
 .resume-expertise__stack {
-  font-size: 12px;
+  font-size: 11px;
+  line-height: 1.4;
   color: var(--clr-font-secondary);
 }
 
@@ -184,9 +187,20 @@
   font-weight: 700;
 }
 
+.resume-entry__title--company {
+  color: var(--clr-accent);
+}
+
 .resume-entry__company {
   font-weight: 400;
   color: var(--clr-accent);
+}
+
+.resume a.resume-entry__site {
+  margin-inline-start: 0.7rem;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--clr-font-secondary);
 }
 
 .resume-entry__period {

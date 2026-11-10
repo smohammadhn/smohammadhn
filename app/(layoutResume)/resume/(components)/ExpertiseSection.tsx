@@ -10,11 +10,16 @@ export default function ExpertiseSection() {
           <div className="resume-expertise__row" key={group.label}>
             <dt className="resume-expertise__label">{group.label}</dt>
             <dd className="resume-expertise__body">
-              <ul className="resume-expertise__highlights">
+              <div className="resume-expertise__copy">
                 {group.highlights.map((highlight) => (
-                  <li key={highlight}>{highlight}</li>
+                  <p className="resume-expertise__highlight" key={highlight}>
+                    {highlight}
+                  </p>
                 ))}
-              </ul>
+                {group.note && (
+                  <p className="resume-expertise__note">{group.note}</p>
+                )}
+              </div>
               <p className="resume-expertise__stack">
                 {group.stack.join(' · ')}
               </p>

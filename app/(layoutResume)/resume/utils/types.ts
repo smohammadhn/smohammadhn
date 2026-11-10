@@ -6,12 +6,14 @@ export interface ContactItem {
 export interface SkillGroup {
   label: string
   highlights: readonly string[]
+  note?: string
   stack: readonly string[]
 }
 
 export interface ExperienceItem {
   company: string
-  role: string
+  role?: string
+  siteUrl?: string
   engagement: string
   period: string
   summary?: string
