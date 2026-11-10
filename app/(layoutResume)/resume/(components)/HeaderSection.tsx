@@ -11,14 +11,18 @@ export default function HeaderSection() {
       <p className="resume-header__title">Senior Full-Stack Engineer</p>
 
       <ul className="resume-header__contacts">
-        {contacts.map((contact) => (
+        {contacts.map((contact, index) => (
           <li key={contact.label}>
+            {index > 0 && <span className="resume-header__sep">/</span>}
             <a href={contact.href} target="_blank">
               {contact.label}
             </a>
           </li>
         ))}
-        <li>Remote</li>
+        <li>
+          <span className="resume-header__sep">/</span>
+          Remote
+        </li>
       </ul>
     </header>
   )
