@@ -175,6 +175,10 @@
   margin-top: 0.9rem;
 }
 
+.resume-project + .resume-project {
+  margin-top: 1.45rem;
+}
+
 .resume-entry__head {
   display: flex;
   justify-content: space-between;
@@ -218,9 +222,7 @@
   margin-top: 0.2rem;
 }
 
-.resume-entry__stack {
-  margin-top: 0.15rem;
-  font-size: 12px;
+.resume-project .resume-entry__summary {
   color: var(--clr-font-secondary);
 }
 

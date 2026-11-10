@@ -22,8 +22,10 @@ export interface ExperienceItem {
 
 export interface ProjectItem {
   name: string
+  period?: string
   link?: string
-  summary: string
-  stack: string[]
+  githubRepoURL?: string
+  commitCount?: number
+  summary?: string
   visible: boolean
 }
