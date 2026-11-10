@@ -10,6 +10,11 @@ export default function HeaderSection() {
 
       <p className="resume-header__title">Senior Full-Stack Engineer</p>
 
+      <p className="resume-header__focus">
+        Full-stack engineering · Production AI systems · Real-time interactive
+        experiences
+      </p>
+
       <ul className="resume-header__contacts">
         {contacts.map((contact, index) => (
           <li key={contact.label}>

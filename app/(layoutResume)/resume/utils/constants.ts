@@ -105,7 +105,7 @@ export const experience: ExperienceItem[] = [
   {
     company: 'Dream Team Creative Inc.',
     siteUrl: '',
-    engagement: 'Independent Contractor · Canada · Remote',
+    engagement: 'Concurrent independent contract · Canada · Remote',
     period: '2023 — Present',
     highlights: [
       'Designed a multi-stage AI processing engine combining document analysis, preprocessing, Pinecone semantic retrieval, and dynamically constructed LLM prompts.',
