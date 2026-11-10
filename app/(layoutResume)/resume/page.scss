@@ -70,9 +70,9 @@
 }
 
 .resume-header__last-name {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
-  letter-spacing: 0.45em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--clr-font-secondary);
 }
@@ -85,7 +85,7 @@
 }
 
 .resume-header__focus {
-  margin-top: 0.3rem;
+  margin-top: 0.1rem;
   font-size: 13px;
   color: var(--clr-font-secondary);
 }
@@ -280,9 +280,8 @@
     font-variant-ligatures: none;
   }
 
-  // Wide tracking is read as a space between every letter
-  // ("H O S S E I N I N E J A D", "P R O F I L E").
-  .resume-header__last-name,
+  // Wide tracking on headings is read as a space between every letter
+  // ("P R O F I L E"). The last name keeps its screen tracking so print matches.
   .resume-section__heading {
     letter-spacing: 0;
   }

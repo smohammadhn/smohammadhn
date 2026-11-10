@@ -26,9 +26,10 @@ export const skillGroups: SkillGroup[] = [
   {
     label: 'Frontend Engineering',
     highlights: [
-      'Motion-driven interfaces and 3D experiences using GSAP, Framer Motion, and Three.js.',
+      'Motion-driven interfaces and 3D experiences using GSAP and Three.js.',
       'Long-running kiosk applications optimized for memory, CPU, and sustained performance.',
-      'Responsive, accessible experiences across mobile, desktop, and large-format displays, backed by browser automation and regression testing.',
+      'WCAG 2.1 AA accessible, Responsive Design, Browser Automation, Regression Testing.',
+      // 'Responsive, accessible experiences across mobile, desktop, and large-format displays, backed by browser automation and regression testing.',
     ],
     stack: [
       'React/Next.js',
@@ -54,6 +55,7 @@ export const skillGroups: SkillGroup[] = [
       'MySQL/PostgreSQL',
       'Supabase',
       'WebSockets/Socket.IO',
+      'Convex',
     ],
   },
   {
@@ -81,6 +83,7 @@ export const skillGroups: SkillGroup[] = [
       'Embeddings',
       'Vector Databases',
       'RAG',
+      'Pinecone',
       'Prompt Engineering',
     ],
   },
