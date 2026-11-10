@@ -50,6 +50,44 @@
   justify-content: space-between;
 }
 
+html.resume-light .resume__page {
+  background-color: #ffffff;
+}
+
+// ---------------------------------------------------------------------------
+// Theme toggle (screen only, never part of the export)
+// ---------------------------------------------------------------------------
+
+.resume-theme-toggle {
+  position: fixed;
+  z-index: 2;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  gap: 0.15rem;
+  padding: 0.2rem;
+  border: 1px solid var(--clr-border);
+  border-radius: 999px;
+  background-color: var(--clr-background);
+}
+
+.resume-theme-toggle__option {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  background: transparent;
+  color: var(--clr-font-secondary);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  &[aria-pressed='true'] {
+    background-color: var(--clr-accent);
+    color: var(--clr-background);
+    font-weight: 700;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Header
 // ---------------------------------------------------------------------------
@@ -273,6 +311,10 @@
 // ---------------------------------------------------------------------------
 
 @media print {
+  .resume-theme-toggle {
+    display: none;
+  }
+
   .resume {
     display: block;
     padding: 0;

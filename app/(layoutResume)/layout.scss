@@ -5,6 +5,26 @@ html {
   -webkit-print-color-adjust: exact;
 }
 
+// ATS sheet: white paper, black body, gray support copy, dark green accent.
+// Print reads the same variables, so the export matches the theme on screen.
+html.resume-light {
+  color-scheme: light;
+  --clr-background: #ffffff;
+  --clr-accent: #14683f;
+  --clr-font-primary: #111111;
+  --clr-font-secondary: #5a5a5a;
+  --clr-border: #c8c8c8;
+
+  ::selection {
+    color: #ffffff;
+    background: var(--clr-accent);
+  }
+}
+
+html.resume-light #main-background-image {
+  display: none;
+}
+
 body {
   background-color: var(--clr-background);
   print-color-adjust: exact;

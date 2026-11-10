@@ -1,6 +1,7 @@
 import './page.scss'
 
 import HeaderSection from './(components)/HeaderSection'
+import ThemeToggle from './(components)/ThemeToggle'
 import ProfileSection from './(components)/ProfileSection'
 import ExpertiseSection from './(components)/ExpertiseSection'
 import ExperienceSection from './(components)/ExperienceSection'
@@ -11,6 +12,8 @@ import EarlierExperienceSection from './(components)/EarlierExperienceSection'
 export default function ResumePage() {
   return (
     <main className="resume">
+      <ThemeToggle />
+
       {/* Page 1: everything a recruiter needs in a quick scan */}
       <div className="resume__page resume__page--spread">
         {/* Name, title and contact links */}
