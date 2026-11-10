@@ -30,14 +30,16 @@
 .resume__page {
   width: 210mm;
   max-width: 100%;
-  min-height: 297mm;
+  height: 297mm;
+  flex-shrink: 0;
+  overflow-y: auto;
   padding: 10mm 12mm;
 
   display: flex;
   flex-direction: column;
   gap: 7mm;
 
-  background-color: color-mix(in srgb, var(--clr-background) 85%, transparent);
+  // background-color: color-mix(in srgb, var(--clr-background) 85%, transparent);
   border: 1px solid var(--clr-border);
   border-radius: 1rem;
 }
@@ -48,7 +50,9 @@
 
 .resume-header__name {
   display: flex;
-  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
   line-height: 1;
 }
 
@@ -60,7 +64,6 @@
 }
 
 .resume-header__last-name {
-  margin-top: 0.5rem;
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.45em;
@@ -134,9 +137,30 @@
 
 .resume-expertise__label {
   font-weight: 700;
+  white-space: pre-line;
 }
 
-.resume-expertise__skills {
+.resume-expertise__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.resume-expertise__highlights {
+  padding-left: 1.1rem;
+  list-style: disc;
+
+  li + li {
+    margin-top: 0.1rem;
+  }
+
+  li::marker {
+    color: var(--clr-accent);
+  }
+}
+
+.resume-expertise__stack {
+  font-size: 12px;
   color: var(--clr-font-secondary);
 }
 
@@ -212,7 +236,9 @@
 
   .resume__page {
     width: 210mm;
+    height: auto;
     min-height: 297mm;
+    overflow: visible;
     border: none;
     border-radius: 0;
     background-color: transparent;

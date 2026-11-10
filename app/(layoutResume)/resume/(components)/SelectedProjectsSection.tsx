@@ -1,12 +1,14 @@
 import SectionHeading from './SectionHeading'
 import ProjectEntry from './ProjectEntry'
-import { selectedProjects } from '../utils/constants'
+import { projects } from '../utils/constants'
 
 export default function SelectedProjectsSection() {
+  const visibleProjects = projects.filter((item) => item.visible)
+
   return (
     <section id="resume-selected-projects" className="resume-section">
       <SectionHeading>Selected Projects</SectionHeading>
-      {selectedProjects.map((item) => (
+      {visibleProjects.map((item) => (
         <ProjectEntry item={item} key={item.name} />
       ))}
     </section>

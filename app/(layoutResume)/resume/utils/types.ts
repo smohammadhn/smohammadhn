@@ -5,7 +5,8 @@ export interface ContactItem {
 
 export interface SkillGroup {
   label: string
-  skills: string[]
+  highlights: readonly string[]
+  stack: readonly string[]
 }
 
 export interface ExperienceItem {
@@ -22,4 +23,5 @@ export interface ProjectItem {
   link?: string
   summary: string
   stack: string[]
+  visible: boolean
 }

@@ -33,12 +33,10 @@ export const skillGroups = [
       'Browser automation, interaction testing, and regression testing.',
     ],
     stack: [
-      'Next.js',
-      'React',
+      'React/Next.js',
       'TypeScript',
+      '3D Graphics',
       'GSAP',
-      'Framer Motion',
-      'Three.js',
       'React Three Fiber',
       'Drei',
       'Tailwind CSS',
@@ -46,7 +44,7 @@ export const skillGroups = [
     ],
   },
   {
-    label: 'Backend & Systems',
+    label: 'Backend \n& Systems',
     highlights: [
       'Modular backend architecture and production API development.',
       'Real-time communication and event-driven application features.',
@@ -57,14 +55,13 @@ export const skillGroups = [
       'Node.js',
       'NestJS',
       'Prisma',
-      'PostgreSQL',
-      'MySQL',
+      'MySQL/PostgreSQL/MariaDb',
       'Supabase',
-      'Socket.IO',
+      'Websockets/Socket.IO',
     ],
   },
   {
-    label: 'Infrastructure & Production',
+    label: 'Infrastructure \n& Production',
     highlights: [
       'Containerized deployments and multi-service production environments.',
       'Cloud infrastructure provisioning and infrastructure as code.',
@@ -72,24 +69,29 @@ export const skillGroups = [
       'Infrastructure monitoring, observability, and production troubleshooting.',
     ],
     stack: [
-      'Docker',
-      'Docker Compose',
-      'Docker Swarm',
-      'AWS',
+      'AWS/Azure/Cloudflare',
+      'Docker/Compose/Swarm',
       'Terraform',
       'Traefik',
-      'Prometheus',
+      'Twilio',
       'Grafana',
     ],
   },
   {
-    label: 'AI Engineering',
+    label: 'AI \nEngineering',
     highlights: [
       'RAG systems connected to domain-specific knowledge.',
       'Multi-stage LLM processing and document preprocessing pipelines.',
       'Semantic retrieval and vector-based knowledge search.',
     ],
-    stack: ['OpenAI', 'LangChain', 'Embeddings', 'Vector Databases', 'RAG'],
+    stack: [
+      'OpenAI',
+      'LangChain',
+      'Embeddings',
+      'Vector Databases',
+      'RAG',
+      'Prompt Engineering',
+    ],
   },
 ] as const
 
@@ -123,46 +125,44 @@ export const experience: ExperienceItem[] = [
 ]
 
 // ---------------------------------------------------------------------------
-// Selected projects (strongest few, shown on page one)
+// Projects (page two, hidden when visible is false)
 // ---------------------------------------------------------------------------
 
-export const selectedProjects: ProjectItem[] = [
+export const projects: ProjectItem[] = [
   {
     name: 'Project Lorem',
     summary:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     stack: ['Next.js', 'NestJS', 'PostgreSQL', 'Docker'],
+    visible: true,
   },
   {
     name: 'Project Ipsum',
     summary:
       'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     stack: ['OpenAI', 'LangChain', 'RAG', 'Supabase'],
+    visible: true,
   },
   {
     name: 'Project Dolor',
     summary:
       'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     stack: ['Docker Swarm', 'Traefik', 'Terraform', 'Grafana'],
+    visible: true,
   },
-]
-
-// ---------------------------------------------------------------------------
-// More projects (overflow from selected projects, page two)
-// ---------------------------------------------------------------------------
-
-export const moreProjects: ProjectItem[] = [
   {
     name: 'Project Sit',
     summary:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     stack: ['React', 'Three.js', 'GSAP'],
+    visible: true,
   },
   {
     name: 'Project Amet',
     summary:
       'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
     stack: ['Vue', 'Nuxt', 'Socket.IO', 'MySQL'],
+    visible: true,
   },
 ]
 

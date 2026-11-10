@@ -5,7 +5,6 @@ import ProfileSection from './(components)/ProfileSection'
 import ExpertiseSection from './(components)/ExpertiseSection'
 import ExperienceSection from './(components)/ExperienceSection'
 import SelectedProjectsSection from './(components)/SelectedProjectsSection'
-import MoreProjectsSection from './(components)/MoreProjectsSection'
 import EarlierExperienceSection from './(components)/EarlierExperienceSection'
 import DidYouKnowSection from './(components)/DidYouKnowSection'
 
@@ -26,15 +25,12 @@ export default function ResumePage() {
 
         {/* Current Canadian engagements */}
         <ExperienceSection />
-
-        {/* Strongest projects, each showing a different engineering strength */}
-        <SelectedProjectsSection />
       </div>
 
       {/* Page 2: optional depth for interested readers */}
       <div className="resume__page">
-        {/* Remaining projects that didn't fit page one */}
-        <MoreProjectsSection />
+        {/* Projects, selected and the rest, under one heading */}
+        <SelectedProjectsSection />
 
         {/* Pre-2023 roles, kept compact */}
         <EarlierExperienceSection />
