@@ -6,8 +6,7 @@ import { AiOutlineHome, AiOutlineUser, AiOutlineArrowUp } from 'react-icons/ai'
 import { LiaSuitcaseSolid } from 'react-icons/lia'
 import { BsHddStack, BsGrid1X2 } from 'react-icons/bs'
 import Link from 'next/link'
-import { Button } from '@nextui-org/button'
-import { Tooltip } from '@nextui-org/tooltip'
+import { Button, Tooltip } from '@heroui/react'
 
 export default function Aside() {
   const handleScrollToTop = () => {
@@ -47,42 +46,46 @@ export default function Aside() {
       <ul>
         {navLinks.map(({ href, icon, title }) => (
           <li key={href}>
-            <Tooltip
-              content={title}
-              closeDelay={0}
-              showArrow
-              placement="left"
-              className="tooltip"
-              style={{ height: 'auto' }}
-            >
-              <Link href={href}>
-                <Button size="md" radius="full" isIconOnly variant="light">
-                  {icon}
-                </Button>
-              </Link>
+            <Tooltip delay={0} closeDelay={0}>
+              <Tooltip.Trigger>
+                <Link href={href}>
+                  <Button
+                    size="md"
+                    isIconOnly
+                    variant="ghost"
+                    aria-label={title}
+                    className="rounded-full"
+                  >
+                    {icon}
+                  </Button>
+                </Link>
+              </Tooltip.Trigger>
+              <Tooltip.Content placement="left" className="tooltip">
+                <Tooltip.Arrow />
+                {title}
+              </Tooltip.Content>
             </Tooltip>
           </li>
         ))}
 
         <li>
-          <Tooltip
-            content="Back to top"
-            closeDelay={0}
-            showArrow
-            className="tooltip"
-            style={{ height: 'auto' }}
-            placement="left"
-          >
-            <Button
-              className="back-to-top"
-              isIconOnly
-              radius="full"
-              variant="light"
-              onClick={handleScrollToTop}
-              size="md"
-            >
-              <AiOutlineArrowUp />
-            </Button>
+          <Tooltip delay={0} closeDelay={0}>
+            <Tooltip.Trigger>
+              <Button
+                className="back-to-top rounded-full"
+                isIconOnly
+                variant="ghost"
+                onPress={handleScrollToTop}
+                size="md"
+                aria-label="Back to top"
+              >
+                <AiOutlineArrowUp />
+              </Button>
+            </Tooltip.Trigger>
+            <Tooltip.Content placement="left" className="tooltip">
+              <Tooltip.Arrow />
+              Back to top
+            </Tooltip.Content>
           </Tooltip>
         </li>
       </ul>

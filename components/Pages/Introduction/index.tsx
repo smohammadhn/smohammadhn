@@ -1,6 +1,6 @@
 import './index.scss'
 
-import { Tooltip } from '@nextui-org/tooltip'
+import { Tooltip } from '@heroui/react'
 import Link from 'next/link'
 import SectionStarterBadge from '@/components/SectionStarterBadge'
 
@@ -71,14 +71,14 @@ export default function Introduction(props: Props) {
 
       <ul className="introduction__stats">
         <li>
-          <Tooltip
-            content="Since early 2019"
-            closeDelay={0}
-            showArrow
-            className="tooltip"
-            style={{ height: 'auto' }}
-          >
-            <span className="font-color-accent">{yearDifference}+</span>
+          <Tooltip delay={0} closeDelay={0}>
+            <Tooltip.Trigger>
+              <span className="font-color-accent">{yearDifference}+</span>
+            </Tooltip.Trigger>
+            <Tooltip.Content className="tooltip">
+              <Tooltip.Arrow />
+              Since early 2019
+            </Tooltip.Content>
           </Tooltip>
 
           <span className="font-color-secondary font-size-tiny">

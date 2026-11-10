@@ -1,6 +1,6 @@
 import './index.scss'
 import { ReactNode } from 'react'
-import { Button } from '@nextui-org/button'
+import { Button } from '@heroui/react'
 import Link from 'next/link'
 
 interface Props {
@@ -13,13 +13,12 @@ export default function SectionStarterBadge(props: Props) {
   return (
     <Link href={`/${props.text.toLowerCase()}`}>
       <Button
-        className="SectionStarterBadge"
-        radius="full"
+        className="SectionStarterBadge rounded-full"
         size="sm"
-        variant="bordered"
-        startContent={props.icon}
+        variant="outline"
         style={{ marginBottom: props.bottomSpacer ? 'min(4rem, 12vw)' : '0' }}
       >
+        {props.icon}
         <h2>{props.text.toUpperCase()}</h2>
       </Button>
     </Link>

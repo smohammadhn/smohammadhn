@@ -80,6 +80,11 @@ $bpHideAside: 900px;
     opacity: 0.7;
   }
 
+  &__email {
+    background-color: var(--clr-accent);
+    color: var(--clr-background);
+  }
+
   &__icons {
     display: flex;
     column-gap: 0.5rem;

@@ -1,8 +1,10 @@
-import 'assets/styles/global.scss'
+import '@/assets/styles/reset.css'
+import '@/assets/styles/variables.scss'
+import '@/assets/styles/tailwind.css'
+import '@/assets/styles/global.scss'
 import './layout.scss'
 
 import type { Metadata } from 'next'
-import { Providers } from './providers'
 
 import localFont from 'next/font/local'
 import Image from 'next/image'
@@ -40,13 +42,11 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr" className={lato.className + ' dark'}>
       <body>
-        <Providers>
-          <div className="root" id="scroller">
-            <Aside />
+        <div className="root" id="scroller">
+          <Aside />
 
-            {children}
-          </div>
-        </Providers>
+          {children}
+        </div>
 
         {/* background image */}
         <Image

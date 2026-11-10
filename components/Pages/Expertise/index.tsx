@@ -3,7 +3,7 @@ import SectionStarterBadge from '@/components/SectionStarterBadge'
 import SkillBadge from '@/components/SkillBadge'
 import Reveal from '@/components/Reveal'
 import { BsHddStack } from 'react-icons/bs'
-import { SiNuxtdotjs, SiNodedotjs, SiNextdotjs } from 'react-icons/si'
+import { SiNuxt, SiNodedotjs, SiNextdotjs } from 'react-icons/si'
 
 interface Props {
   bottomSpacer?: boolean
@@ -13,7 +13,7 @@ export default function Expertise(props: Props) {
   const cardsData = [
     {
       technology: 'Vue.js / Nuxt.js',
-      icon: <SiNuxtdotjs />,
+      icon: <SiNuxt />,
       duration: '2.5 Years',
       skills: [
         'Vuetify',

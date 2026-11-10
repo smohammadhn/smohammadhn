@@ -51,9 +51,12 @@ export function RandomizeText(props: Props) {
   }
 
   useEffect(() => {
-    if (props.callOnMounted) {
-      randomize()
-    }
+    if (!props.callOnMounted) return
+
+    const timeout = window.setTimeout(randomize, 0)
+    return () => window.clearTimeout(timeout)
+    // Mount-only scramble. randomize closes over the initial title.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const CutsomTag = props.tagName || 'p'

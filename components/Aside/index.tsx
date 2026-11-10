@@ -2,7 +2,7 @@
 
 import './index.scss'
 import Image from 'next/image'
-import { Button } from '@nextui-org/button'
+import { Button } from '@heroui/react'
 import { FaTelegramPlane } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { AiOutlinePhone, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
@@ -102,13 +102,9 @@ export default function Aside() {
           </ul>
 
           <a href="mailto:smohammadhnd@gmail.com" target="_blank">
-            <Button
-              color="success"
-              radius="full"
-              fullWidth
-              endContent={<MdEmail />}
-            >
+            <Button className="aside__email rounded-full" fullWidth>
               Email me
+              <MdEmail />
             </Button>
           </a>
         </div>

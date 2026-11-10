@@ -23,6 +23,8 @@ export function Model(props) {
 
   useEffect(() => {
     const action = animation.actions.idle
+    // AnimationAction is a mutable three.js object, not React state.
+    // eslint-disable-next-line react-hooks/immutability
     action.timeScale = 0.2
     action.play()
   })

@@ -1,4 +1,7 @@
-import 'assets/styles/global.scss'
+import '@/assets/styles/reset.css'
+import '@/assets/styles/variables.scss'
+import '@/assets/styles/tailwind.css'
+import '@/assets/styles/global.scss'
 
 import type { Metadata } from 'next'
 
